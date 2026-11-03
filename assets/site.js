@@ -162,7 +162,7 @@
       }
       // PostHog: Person an die E Mail binden, damit Opt-in, Video und Buchung als eine zählen (03.11.26)
       try { if (window.posthog && posthog.identify) { posthog.identify(email.toLowerCase(), { email: email.toLowerCase(), vorname: vorname }); posthog.capture("optin_submit", { anliegen: form.getAttribute("data-anliegen") || "" }); } } catch (x) {}
-      try { sessionStorage.setItem("rr_lead", JSON.stringify({ vorname: vorname, t: Date.now() })); } catch (x) {}
+      try { sessionStorage.setItem("rr_lead", JSON.stringify({ vorname: vorname, nachname: nachname, email: email, tel: tel, t: Date.now() })); /* für die Terminseite vorausgefüllt (03.11.26) */ } catch (x) {}
       // UTM und ref an die nächste Seite weitergeben (03.11.26)
       var q = new URLSearchParams();
       new URLSearchParams(location.search).forEach(function (val, k) { if (k.indexOf("utm_") === 0 || k === "ref") q.set(k, val); });

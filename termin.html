@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Termin buchen · Makerus Consulting</title>
+<!-- Entwurfsstand zur Abnahme. Vor dem Livegang entfernen. -->
+<meta name="robots" content="noindex,nofollow">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="theme-color" content="#14110d">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230f291a'/%3E%3Cg stroke='%23c8bd8f' stroke-width='2' stroke-linecap='round'%3E%3Cpath d='M10 22V12M16 24V8M22 20V13'/%3E%3C/g%3E%3C/svg%3E">
+<!-- PostHog: dasselbe Projekt wie steuern-sparen und start/analyse.html, damit der Funnel als eine Person zählt (03.11.26) -->
+<script>
+    !function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.crossOrigin="anonymous",p.async=!0,p.src=s.api_host.replace(".i.posthog.com","-assets.i.posthog.com")+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="init capture register register_once register_for_session unregister unregister_for_session getFeatureFlag getFeatureFlagPayload isFeatureEnabled reloadFeatureFlags updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures on onFeatureFlags onSessionId getSurveys getActiveMatchingSurveys renderSurvey canRenderSurvey getNextSurveyStep identify setPersonProperties group resetGroups setPersonPropertiesForFlags resetPersonPropertiesForFlags setGroupPropertiesForFlags resetGroupPropertiesForFlags reset get_distinct_id getGroups get_session_id get_session_replay_url alias set_config startSessionRecording stopSessionRecording sessionRecordingStarted captureException loadToolbar get_property getSessionProperty createPersonProfile opt_in_capturing opt_out_capturing has_opted_in_capturing has_opted_out_capturing clear_opt_in_out_capturing debug".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+    posthog.init('phc_BCFSFfumSXa8aHAGkWzammvNik8RtVym6rZSVhaobeat', {
+      api_host: 'https://eu.i.posthog.com',
+      person_profiles: 'identified_only',
+      autocapture: true,
+      capture_pageview: true,
+      capture_pageleave: true,
+      capture_exceptions: true,
+      session_recording: { maskAllInputs: true }
+    });
+  </script>
+<link rel="preload" href="assets/fonts/geist-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/site.css">
+<link rel="stylesheet" href="assets/walk.css">
+<link rel="stylesheet" href="assets/vermieter-video.css">
+<link rel="stylesheet" href="assets/analyse.css">
+<link rel="stylesheet" href="assets/termin.css">
+</head>
+<body class="walk-body">
+<!-- Seite 3 Vermieter Funnel nach Simons Briefing (Robert Funnel Briefing Kerim.md, 03.11.26) -->
+<div class="walk-bg mv-bg" aria-hidden="true">
+  <img class="mv-room" src="assets/img/film/kueche_neu.jpg" alt="" fetchpriority="high">
+  <div class="walk-shade"></div>
+</div>
+
+<header class="site-header">
+  <div class="wrap in">
+    <span class="brand">
+      <span class="mark"><svg viewBox="0 0 24 24" fill="none" stroke="#c8bd8f" stroke-width="1.8" stroke-linecap="round"><path d="M7 17V9M12 20V4M17 15V10"/></svg></span>
+      <span>Makerus<small>CONSULTING</small></span>
+    </span>
+  </div>
+</header>
+
+<main class="sheet walk-page an-page">
+  <section class="an-hero">
+    <div class="wrap">
+      <ol class="mv-steps" aria-label="Dein Fortschritt">
+        <li class="done"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></i><span>Eingetragen</span></li>
+        <li class="done"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></i><span>Video angesehen</span></li>
+        <li class="now"><i>3</i><span>Termin buchen</span></li>
+      </ol>
+      <h1 class="display tm-h1"><span style="display:block" data-hi>Fast geschafft.</span><span class="tail" style="display:block">Sichere dir dein Erstgespräch.</span></h1>
+
+      <div class="an-card" id="tmCard">
+        <!-- Schritt A: Angaben + 3 Fragen -->
+        <form id="tmForm" novalidate>
+          <p class="tm-label">Deine Angaben</p>
+          <div class="form-grid tm-grid">
+            <div class="form-group" data-req><label for="tmVorname">Vorname</label><input id="tmVorname" type="text" autocomplete="given-name" placeholder="Vorname"></div>
+            <div class="form-group" data-req><label for="tmMail">E Mail</label><input id="tmMail" type="email" autocomplete="email" inputmode="email" placeholder="E Mail"></div>
+            <div class="form-group tm-full" data-req><label for="tmTel">Telefonnummer</label><input id="tmTel" type="tel" autocomplete="tel" inputmode="tel" placeholder="Telefonnummer"></div>
+          </div>
+          <p class="tm-label">Drei kurze Fragen</p>
+          <div class="form-grid tm-grid">
+          <div class="form-group tm-full" data-req>
+            <label for="tmNetto">Wie viel verdienst du monatlich netto?</label>
+            <select id="tmNetto" required><option value="" selected disabled>Bitte auswählen</option><option>Unter 2.800 €</option><option>2.800 bis 4.000 €</option><option>4.000 bis 5.000 €</option><option>Über 5.000 €</option></select>
+          </div>
+          <div class="form-group tm-full" data-req>
+            <label for="tmVertrag">Wie bist du angestellt?</label>
+            <select id="tmVertrag" required><option value="" selected disabled>Bitte auswählen</option><option>Unbefristet, Probezeit vorbei</option><option>Unbefristet, noch in der Probezeit</option><option>Befristet</option><option>Selbstständig</option><option>Ausbildung, Studium oder auf Jobsuche</option></select>
+          </div>
+          <div class="form-group tm-full" data-req>
+            <label for="tmKapital">Wie viel Geld hast du bereits angespart?</label>
+            <select id="tmKapital" required><option value="" selected disabled>Bitte auswählen</option><option>Unter 5.000 €</option><option>5.000 bis 20.000 €</option><option>20.000 bis 50.000 €</option><option>Über 50.000 €</option></select>
+          </div>
+          </div>
+          <button type="submit" class="form-submit" id="tmBtn">Termin verbindlich buchen</button>
+          <div class="form-error" id="tmErr" role="alert"></div>
+        </form>
+
+        <!-- Schritt B: Kalender -->
+        <div class="tm-cal" id="tmCal" hidden>
+          <h2 class="tm-h2">Wähle jetzt deinen Termin.</h2>
+          <p class="screen-sub">Freie Zeiten der Berater aus Roberts Team. 30 Minuten, kostenfrei und unverbindlich.</p>
+          <div id="tmCalBox" class="tm-calbox"></div>
+        </div>
+
+        <!-- Schritt B2: passt nicht, Steuerguide statt Termin -->
+        <div class="thanks tm-no" id="tmNo" hidden>
+          <div class="thanks-check tm-book"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5.5A2.5 2.5 0 016.5 3H20v16H6.5A2.5 2.5 0 004 21.5z"/><path d="M4 5.5v16"/><path d="M9 7h7M9 11h5"/></svg></div>
+          <h2 class="tm-h2">Ein Termin passt gerade leider noch nicht.</h2>
+          <p>Für unser Modell setzen wir mindestens 2.800 € netto im Monat und einen unbefristeten Arbeitsvertrag voraus. Damit du trotzdem weiterkommst, schenken wir dir Roberts Steuerguide.</p>
+          <div class="thanks-actions" style="margin-top:22px">
+            <a class="thanks-btn primary" id="tmGuide" href="assets/Steuerguide_Robert_Schwagerus.pdf" download="Steuerguide_Robert_Schwagerus.pdf"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v11M7 11l5 5 5-5M5 20h14"/></svg>Steuerguide kostenfrei herunterladen</a>
+          </div>
+          <p class="tm-small">16 Seiten: wie Angestellte mit einer vermieteten Immobilie legal weniger Steuern zahlen.</p>
+        </div>
+
+        <!-- Schritt C: Bestätigung -->
+        <div class="thanks" id="tmDone" hidden>
+          <div class="thanks-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></div>
+          <h2 class="tm-h2">Dein Termin ist gebucht.</h2>
+          <p>Du erhältst eine Bestätigung per E Mail.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="row">
+    <div>Schwagerus Capital GmbH · Hafenstraße 142 · 59067 Hamm</div>
+    <div><a href="impressum.html">Impressum</a> &nbsp; <a href="datenschutz.html">Datenschutz</a></div>
+  </div>
+  <p class="by">Seite von <a href="https://krmqntno.github.io" target="_blank" rel="noopener">Kerim Quintino</a></p>
+</footer>
+
+<script src="assets/config.js"></script>
+<script src="assets/termin.js"></script>
+</body>
+</html>
