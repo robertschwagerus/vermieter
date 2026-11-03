@@ -96,7 +96,8 @@
   /* ---------- Formular ---------- */
   var MC = new URLSearchParams(location.search).get("mc") || "";
   var mailOk = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
-  var telRe = /^\+?[\d\s()\/.]{6,20}$/;
+  var telRe = /^[\d\s()+\/.]{6,20}$/;
+  function telDigits(v) { return (v.match(/\d/g) || []).length; }
 
   function setErr(field, on) { if (field) field.classList.toggle("err", on); }
 
@@ -143,7 +144,7 @@
       var nameOk = vorname.length >= 2 && (!voll || nachname.length >= 2);
       var email = fMail.querySelector("input").value.trim();
       var tel = fTel ? fTel.querySelector("input").value.trim() : "";
-      var telOk = !fTel || telRe.test(tel);
+      var telOk = !fTel || (telRe.test(tel) && telDigits(tel) >= 7);
       var ok = cons.querySelector("input").checked;
       setErr(fName, !nameOk);
       setErr(fMail, !mailOk.test(email));

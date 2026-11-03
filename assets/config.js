@@ -8,7 +8,7 @@ window.RR = {
 
   // OFFEN: aus HubSpot, Marketing > Formulare > Einbetten. Leer heißt:
   // Demo Modus, es wird nichts verschickt, die Seite läuft trotzdem durch.
-  hubspot: { portalId: "139527252", formGuid: "887bfec9-3666-42d0-bcb5-357a4747e603" }, // Übergang 03.11.26: Analyseformular, bis Simons Opt-in Form da ist
+  hubspot: { portalId: "139527252", formGuid: "43dfa7d0-ba7e-46dd-a7ea-a663d2e42aa2" }, // Vermieter Opt-in (Video anfordern), angelegt 03.11.26
 
   // OFFEN: Termin Link von Robert (Calendly o. ä.). Leer heißt: Button
   // öffnet stattdessen eine E Mail an Roberts Team.
@@ -16,7 +16,7 @@ window.RR = {
 
   // Vermieter Funnel Seite 3 (termin.html), Briefing Simon 03.11.26.
   // OFFEN: zweites HubSpot Formular von Simon (eigene Form GUID). Leer heißt Demo, nichts wird gesendet.
-  hubspotTermin: { portalId: "139527252", formGuid: "887bfec9-3666-42d0-bcb5-357a4747e603" }, // Übergang 03.11.26, bis Simons Termin Form da ist
+  hubspotTermin: { portalId: "139527252", formGuid: "09fb462c-d926-4174-a7ec-470f4a9080d2" }, // Vermieter Termin (Qualifizierung + Buchung), angelegt 03.11.26
   // Kalender der Berater. Platzhalter: der Calendly Link aus start/analyse.html, bis Simon den finalen schickt.
   // Weiche auf der Terminseite (Kerim 03.11.26): passt nur mit mind. 2.800 € netto UND unbefristet nach der Probezeit.
   // Sonst Steuerguide statt Kalender. Texte müssen exakt den Optionen in termin.html entsprechen.

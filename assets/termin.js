@@ -14,7 +14,8 @@
   }
   ph("termin_view", { vorausgefuellt: !!lead });
 
-  var mailOk = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/, telRe = /^\+?[\d\s()\/.]{6,20}$/;
+  var mailOk = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/, telRe = /^[\d\s()+\/.]{6,20}$/;
+  function telDigits(v) { return (v.match(/\d/g) || []).length; }
   var form = $("tmForm"), btn = $("tmBtn"), err = $("tmErr"), label = btn.textContent;
   function bad(id, on) { $(id).closest(".form-group").classList.toggle("err", on); return on; }
 
@@ -38,7 +39,7 @@
     e.preventDefault(); err.classList.remove("show");
     var d = { vorname: $("tmVorname").value.trim(), email: $("tmMail").value.trim(), tel: $("tmTel").value.trim(),
       netto: $("tmNetto").value, vertrag: $("tmVertrag").value, kapital: $("tmKapital").value };
-    var f = [bad("tmVorname", d.vorname.length < 2), bad("tmMail", !mailOk.test(d.email)), bad("tmTel", !telRe.test(d.tel)),
+    var f = [bad("tmVorname", d.vorname.length < 2), bad("tmMail", !mailOk.test(d.email)), bad("tmTel", !telRe.test(d.tel) || telDigits(d.tel) < 7),
       bad("tmNetto", !d.netto), bad("tmVertrag", !d.vertrag), bad("tmKapital", !d.kapital)];
     if (f.some(Boolean)) { err.textContent = "Bitte fülle alle Felder aus."; err.classList.add("show"); ph("termin_validation_error"); return; }
     // Weiche (Kerim 03.11.26): mindestens 2.800 € netto und unbefristet nach der Probezeit, Regeln in config.js
