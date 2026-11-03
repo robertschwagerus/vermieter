@@ -1,0 +1,360 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Vermieter werden · Makerus Consulting</title>
+<meta name="description" content="Kostenfreies Video: Robert Schwagerus zeigt dir Schritt für Schritt, wie seine Kunden Bestandswohnungen unter Marktwert kaufen.">
+<!-- Entwurfsstand zur Abnahme. Vor dem Livegang entfernen. -->
+<meta name="robots" content="noindex,nofollow">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="theme-color" content="#14110d">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230f291a'/%3E%3Cg stroke='%23c8bd8f' stroke-width='2' stroke-linecap='round'%3E%3Cpath d='M10 22V12M16 24V8M22 20V13'/%3E%3C/g%3E%3C/svg%3E">
+<link rel="preload" href="assets/fonts/geist-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/site.css">
+<link rel="stylesheet" href="assets/walk.css">
+<style>
+/* Opt-in Vermieter (03.11.26): Texte und Reihenfolge von Simon, Design wie wohnung.html */
+.trust{margin:14px 0 0;text-align:center;font-size:13px;font-weight:600;letter-spacing:-.005em;color:var(--fg)}
+.trust i{font-style:normal;color:var(--gold);padding:0 7px}
+.cta-row{margin-top:30px}
+.cta-row .btn{height:auto;min-height:52px;padding:14px 26px;white-space:nowrap}
+#fragen .cta-row{text-align:center}
+/* Letzter Knopf groß und mittig, weniger Luft bis zum Fuß (03.11.26) */
+.cta-final{display:flex;justify-content:center;margin-top:44px;max-width:52rem}
+.vh-cta.big{padding:16px 16px 16px 34px;gap:26px;border-radius:22px}
+.vh-cta.big b{font-size:clamp(18px,2vw,22px)}
+.vh-cta.big small{font-size:14px}
+.vh-cta.big .go{width:58px;height:58px;border-radius:16px}
+@media(max-width:600px){.vh-cta.big{width:100%;padding:14px 14px 14px 22px}}
+.walk-page .band:last-of-type{padding-bottom:12vh}
+#fragen .head{margin-left:auto;margin-right:auto;text-align:center}
+#fragen .faq{margin-left:auto;margin-right:auto}
+#fragen .cta-final{margin-left:auto;margin-right:auto}
+/* Bekannt aus ohne Fläche, Logos weiß: fließender Übergang auf der Wohnung (03.11.26) */
+.pr-band{background:transparent;backdrop-filter:none;-webkit-backdrop-filter:none}
+.pr-title{color:rgba(255,255,255,.75);text-shadow:0 2px 12px rgba(0,0,0,.5)}
+.pr-row li{border-right-color:rgba(255,255,255,.22)}
+.pr-logo img{filter:brightness(0) invert(1) drop-shadow(0 2px 8px rgba(0,0,0,.45));opacity:.8}
+.pr-logo:hover img{filter:brightness(0) invert(1);opacity:1}
+.pr-icon{color:rgba(255,255,255,.8)}
+.pr-icon:hover{color:#fff}
+/* Kopf nach Vorlage live-workshop (03.11.26): Pillen, Headline, Knopf, Belegzeile, rechts Robert freigestellt mit Chips */
+.vh{min-height:100vh;min-height:100svh;display:flex;align-items:center;padding:104px 0 56px}
+.vh-grid{display:grid;grid-template-columns:minmax(0,1fr);gap:28px;align-items:center}
+@media(min-width:980px){.vh-grid{grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:56px}}
+.vh-pills{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:26px}
+.vh-pill{display:flex;align-items:center;gap:10px;padding:8px 18px 8px 9px;border-radius:999px;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.22);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);color:#fff}
+.vh-pill .ic{width:30px;height:30px;border-radius:50%;display:grid;place-items:center;background:rgba(200,189,143,.22);color:var(--gold)}
+.vh-pill .ic svg{width:15px;height:15px}
+.vh-pill small{display:block;font-size:10px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.7);line-height:1.2}
+.vh-pill b{display:block;font-size:13.5px;font-weight:600;line-height:1.3}
+.vh h1.display{color:#fff;text-shadow:0 4px 30px rgba(0,0,0,.45)}
+.vh h1 .tail{color:var(--gold)}
+.vh .lead{color:rgba(255,255,255,.88);text-shadow:0 2px 14px rgba(0,0,0,.55);margin-top:20px;max-width:36rem}
+.vh .lead b{color:#fff;font-weight:600}
+.vh-cta{display:inline-flex;align-items:center;gap:18px;margin-top:30px;padding:12px 12px 12px 26px;border:0;border-radius:18px;cursor:pointer;text-align:left;font:inherit;color:var(--green);
+  background:linear-gradient(135deg,#efe6bf,var(--gold) 55%,#b3a46a);box-shadow:0 18px 40px -14px rgba(200,189,143,.7);transition:transform .2s,box-shadow .2s}
+.vh-cta:hover{transform:translateY(-2px);box-shadow:0 24px 50px -14px rgba(200,189,143,.85)}
+.vh-cta b{display:block;font-size:17px;font-weight:600;letter-spacing:-.01em}
+.vh-cta small{display:block;font-size:13px;opacity:.75;margin-top:2px}
+.vh-cta .go{width:48px;height:48px;border-radius:13px;background:rgba(15,41,26,.12);display:grid;place-items:center;flex:none}
+.vh-cta .go svg{width:20px;height:20px}
+.vh-proof{display:flex;align-items:center;gap:14px;margin-top:26px;color:rgba(255,255,255,.8);font-size:14px;text-shadow:0 2px 10px rgba(0,0,0,.5)}
+.vh-proof b{color:#fff;font-weight:600}
+.vh-faces{display:flex}
+.vh-faces img{width:36px;height:36px;border-radius:50%;object-fit:cover;object-position:50% 18%;border:2px solid rgba(255,255,255,.85);margin-left:-9px}
+.vh-faces img:first-child{margin-left:0}
+/* Bildkarte */
+.vh-card{position:relative;aspect-ratio:4/4.6;border-radius:28px;overflow:visible;max-width:540px;justify-self:end;width:100%}
+.vh-card .bg{position:absolute;inset:0;border-radius:28px;overflow:hidden;border:1px solid rgba(255,255,255,.35);
+  background:radial-gradient(70% 60% at 62% 22%,rgba(239,230,191,.95),rgba(239,230,191,0) 70%),linear-gradient(180deg,#f6f3ea,#e7e1d2);box-shadow:0 40px 90px -30px rgba(0,0,0,.7)}
+.vh-card .ring{position:absolute;left:12%;right:12%;top:16%;aspect-ratio:1;border-radius:50%;border:1px solid rgba(15,41,26,.12)}
+.vh-card .person{position:absolute;left:50%;bottom:0;transform:translateX(-50%);height:94%;width:auto;max-width:none;border-radius:0 0 28px 28px;
+  -webkit-mask-image:linear-gradient(180deg,#000 82%,transparent);mask-image:linear-gradient(180deg,#000 82%,transparent)}
+.chip{position:absolute;display:flex;align-items:center;gap:11px;padding:11px 16px 11px 12px;border-radius:14px;background:rgba(255,255,255,.96);color:#1b1b18;box-shadow:0 14px 34px -12px rgba(0,0,0,.35);white-space:nowrap}
+.chip b{display:block;font-size:13.5px;font-weight:600;line-height:1.25}
+.chip small{display:block;font-size:12px;color:#6b6b66;line-height:1.3}
+.chip .ci{width:30px;height:30px;border-radius:9px;display:grid;place-items:center;background:var(--green);color:var(--gold);flex:none}
+.chip .ci svg{width:16px;height:16px}
+.chip.c1{top:9%;right:-5%}
+.chip.c2{top:34%;left:-7%}
+.chip.c3{bottom:9%;right:-4%}
+@media(max-width:979px){
+  .vh{padding:86px 0 36px}
+  .vh-card{justify-self:center;max-width:430px;margin-top:6px}
+  .chip.c1{right:-2%}.chip.c2{left:-2%}.chip.c3{right:-2%}
+  .vh-proof{order:3}
+}
+@media(max-width:600px){
+  .vh h1.display{font-size:31px}
+  .vh .lead{font-size:15px;line-height:1.5;margin-top:14px}
+  .vh-pills{margin-bottom:18px;gap:8px}
+  .vh-pill{padding:6px 14px 6px 7px}.vh-pill .ic{width:26px;height:26px}.vh-pill b{font-size:12.5px}
+  .vh-cta{display:flex;width:100%;margin-top:22px}
+  .chip{padding:9px 12px 9px 10px}.chip b{font-size:12.5px}.chip small{font-size:11px}.chip .ci{width:26px;height:26px}
+}
+/* Glas B + 3D (03.11.26): Kippen nach Zeiger, Tiefenebenen, Glanz, schwebende Chips, Einflug */
+.vh-card{perspective:1300px;--rx:0deg;--ry:0deg;--px:0;--py:0;--gx:50%;--gy:30%}
+.vh-card .tilt{position:absolute;inset:0;transform:rotateX(var(--rx)) rotateY(var(--ry))}
+.vh-card .bg{background:radial-gradient(60% 50% at 60% 25%,rgba(255,255,255,.45),rgba(255,255,255,0) 70%),linear-gradient(160deg,rgba(255,255,255,.5),rgba(255,255,255,.18));
+  backdrop-filter:blur(26px) saturate(1.2);-webkit-backdrop-filter:blur(26px) saturate(1.2);border:1px solid rgba(255,255,255,.6);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.8),inset 0 0 0 1px rgba(255,255,255,.12),0 50px 100px -30px rgba(0,0,0,.75)}
+.vh-card .bg::after{content:"";position:absolute;inset:-40%;pointer-events:none;z-index:3;background:linear-gradient(115deg,transparent 42%,rgba(255,255,255,.38) 50%,transparent 58%);transform:translateX(-60%);animation:vShine 7s ease-in-out 1.6s infinite}
+@keyframes vShine{0%,70%{transform:translateX(-60%)}100%{transform:translateX(60%)}}
+.vh-card .ring{border-color:rgba(255,255,255,.55);transform:translate(calc(var(--px)*14px),calc(var(--py)*10px))}
+.vh-card .glare{position:absolute;inset:0;pointer-events:none;z-index:2;mix-blend-mode:soft-light;background:radial-gradient(45% 40% at var(--gx) var(--gy),rgba(255,255,255,.9),rgba(255,255,255,0) 70%)}
+.vh-card .person{transform:translateX(calc(-50% + var(--px)*-12px)) translateY(calc(var(--py)*-6px)) scale(1.02)}
+.chip{background:rgba(255,255,255,.72);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border:1px solid rgba(255,255,255,.85);
+  box-shadow:inset 0 1px 0 #fff,0 22px 40px -16px rgba(0,0,0,.45);transform:translate(calc(var(--px)*var(--d,20px)),calc(var(--py)*var(--d,20px)));animation:vFloat 6s ease-in-out infinite;transition:opacity .6s ease .7s}
+.chip.c1{--d:34px;animation-delay:-1s}.chip.c2{--d:24px;animation-delay:-3s}.chip.c3{--d:44px;animation-delay:-5s}
+@keyframes vFloat{0%,100%{translate:0 0}50%{translate:0 -9px}}
+.js .vh-card.rv{opacity:1;transform:none}
+.js .vh-card .tilt{transition:opacity 1s ease,translate 1.2s cubic-bezier(.2,.8,.2,1),rotate 1.2s cubic-bezier(.2,.8,.2,1)}
+.js .vh-card:not(.in) .tilt{opacity:0;translate:0 50px;rotate:y -24deg}
+.js .vh-card:not(.in) .chip{opacity:0}
+@media(prefers-reduced-motion:reduce){.vh-card .bg::after,.chip{animation:none}}
+.chip.c4{top:44%;left:-7%;--d:30px;animation-delay:-2s;text-decoration:none;cursor:pointer}
+.chip.c4:hover{background:#fff}
+.chip .ci.gw{background:#fff;box-shadow:inset 0 0 0 1px rgba(0,0,0,.08)}
+.chip .ci.gw svg.g{width:17px;height:17px}
+.chip .stars{display:inline-flex;gap:1px;vertical-align:-1px;margin-right:4px}
+.chip .stars svg{width:12px;height:12px;fill:#f5b301}
+@media(max-width:979px){.chip.c4{left:-2%}}
+/* Formular als Fenster */
+.vmodal{position:fixed;inset:0;z-index:100;display:none;align-items:center;justify-content:center;padding:20px;background:rgba(10,8,5,.6);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px)}
+.vmodal.on{display:flex}
+.vmodal .lead-card{position:relative;width:100%;max-width:440px;max-height:calc(100svh - 40px);overflow:auto;animation:vIn .25s ease-out}
+.vmodal h3{padding-right:34px}
+.vclose{position:absolute;top:12px;right:12px;width:34px;height:34px;border-radius:50%;border:0;background:rgba(0,0,0,.06);cursor:pointer;font-size:20px;line-height:1;color:var(--fg)}
+@keyframes vIn{from{opacity:0;transform:translateY(12px) scale(.98)}to{opacity:1;transform:none}}
+</style>
+</head>
+<body class="walk-body">
+<div class="walk-bg" aria-hidden="true">
+  <img class="walk-img alt" src="assets/img/film/flur_alt.jpg" alt="" fetchpriority="high">
+  <img class="walk-img neu" src="assets/img/film/flur_neu.jpg" alt="">
+  <video class="walk-film" muted playsinline preload="auto" data-src="assets/video/film/flur.mp4"></video>
+  <div class="walk-shade"></div>
+</div>
+
+
+
+<header class="site-header">
+  <div class="wrap in">
+    <a class="brand" href="#top" aria-label="Makerus Consulting">
+      <span class="mark"><svg viewBox="0 0 24 24" fill="none" stroke="#c8bd8f" stroke-width="1.8" stroke-linecap="round"><path d="M7 17V9M12 20V4M17 15V10"/></svg></span>
+      <span>Makerus<small>CONSULTING</small></span>
+    </a>
+    <nav class="nav" aria-label="Seitenmenü">
+      <a href="#video">Das Video</a>
+      <a href="#fragen">Fragen</a>
+    </nav>
+    <a class="pill-sm" href="#eintragen" data-to-form>Video ansehen</a>
+  </div>
+</header>
+
+<main id="top" class="sheet walk-page">
+  <!-- 1 Kopf nach Vorlage live-workshop.easyimmoinvest.com, Texte von Simon -->
+  <section class="vh">
+    <div class="wrap vh-grid">
+      <div>
+        <div class="vh-pills rv">
+          <div class="vh-pill"><span class="ic"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5.5v13l11-6.5z"/></svg></span><span><small>Kostenfreies Video</small><b>Sofort nach dem Eintragen</b></span></div>
+          <div class="vh-pill"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l9-7 9 7"/><path d="M5 10v10h14V10"/></svg></span><span><small>Für</small><b>Angestellte mit festem Gehalt</b></span></div>
+        </div>
+        <h1 class="display rv" style="--delay:.05s">
+          <span style="display:block">So wirst du innerhalb von sechs Wochen Vermieter.</span>
+          <span class="tail" style="display:block">Mit deinem jetzigen Gehalt.</span>
+        </h1>
+        <p class="lead rv" style="--delay:.12s"><b>Kostenfreies Video:</b> <b>Robert Schwagerus</b> zeigt dir Schritt für Schritt, wie seine Kunden Bestandswohnungen unter Marktwert kaufen, ab Tag 1 Mieteinnahmen haben und sich dabei Tausende Euro vom Finanzamt zurückholen. Ohne Einsatz eigenen Geldes.</p>
+        <button class="vh-cta rv" type="button" data-to-form style="--delay:.16s"><span><b>Jetzt kostenfreies Video ansehen</b><small>Eintragen und sofort loslegen</small></span><span class="go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></button>
+        <div class="vh-proof rv" style="--delay:.2s">
+          <span class="vh-faces"><img src="assets/img/kunden/sebastian.jpg" alt=""><img src="assets/img/kunden/andreas.jpg" alt=""><img src="assets/img/kunden/armel.jpg" alt=""><img src="assets/img/kunden/ulrike.jpg" alt=""></span>
+          <span>Schon über <b>500 Kunden</b> beraten</span>
+        </div>
+      </div>
+      <div class="vh-card rv" style="--delay:.1s" data-tilt>
+        <div class="tilt">
+        <div class="bg"><span class="ring"></span><span class="glare"></span><img class="person" src="assets/img/robert-freigestellt.webp" alt="Robert Schwagerus" fetchpriority="high"></div>
+        <div class="chip c1"><span class="ci"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M7 17V9M12 20V4M17 15V10"/></svg></span><span><b>Robert Schwagerus</b><small>Gründer Makerus Consulting</small></span></div>
+        <div class="chip c3"><span class="ci"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span><span><b>Seit über 10 Jahren</b><small>in der Branche</small></span></div>
+        <a class="chip c4" href="https://www.google.com/maps/place/Makerus+Consulting/data=!4m8!3m7!1s0xa32d0dbacae935a7:0xc7ca45e838e75d0e!8m2!3d51.6758876!4d7.7650414!9m1!1b1" target="_blank" rel="noopener" aria-label="Google Bewertungen von Makerus Consulting öffnen"><span class="ci gw"><svg class="g" viewBox="0 0 48 48"><path fill="#FFC107" d="M43.6 20.5H42V20H24v8h11.3C33.7 32.7 29.2 36 24 36c-6.6 0-12-5.4-12-12s5.4-12 12-12c3.1 0 5.8 1.2 7.9 3.1l5.7-5.7C34.1 6.1 29.3 4 24 4 12.9 4 4 12.9 4 24s8.9 20 20 20 20-8.9 20-20c0-1.3-.1-2.4-.4-3.5z"/><path fill="#FF3D00" d="M6.3 14.7l6.6 4.8C14.7 15.1 19 12 24 12c3.1 0 5.8 1.2 7.9 3.1l5.7-5.7C34.1 6.1 29.3 4 24 4 16.3 4 9.7 8.3 6.3 14.7z"/><path fill="#4CAF50" d="M24 44c5.2 0 9.9-2 13.4-5.2l-6.2-5.2C29.2 35.1 26.7 36 24 36c-5.2 0-9.6-3.3-11.3-8l-6.5 5C9.5 39.6 16.2 44 24 44z"/><path fill="#1976D2" d="M43.6 20.5H42V20H24v8h11.3c-.8 2.2-2.2 4.2-4.1 5.6l6.2 5.2C37 39.2 44 34 44 24c0-1.3-.1-2.4-.4-3.5z"/></svg></span><span><b><span class="stars"><svg viewBox="0 0 24 24"><path d="M12 2.8l2.8 5.9 6.4.8-4.7 4.4 1.2 6.4L12 17.2l-5.7 3.1 1.2-6.4L2.8 9.5l6.4-.8z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2.8l2.8 5.9 6.4.8-4.7 4.4 1.2 6.4L12 17.2l-5.7 3.1 1.2-6.4L2.8 9.5l6.4-.8z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2.8l2.8 5.9 6.4.8-4.7 4.4 1.2 6.4L12 17.2l-5.7 3.1 1.2-6.4L2.8 9.5l6.4-.8z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2.8l2.8 5.9 6.4.8-4.7 4.4 1.2 6.4L12 17.2l-5.7 3.1 1.2-6.4L2.8 9.5l6.4-.8z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2.8l2.8 5.9 6.4.8-4.7 4.4 1.2 6.4L12 17.2l-5.7 3.1 1.2-6.4L2.8 9.5l6.4-.8z"/></svg></span> 5,0</b><small>120 Google Bewertungen</small></span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2 Bekannt aus: Laufband wie wohnung.html -->
+  <section class="pr-band" aria-label="Bekannt aus">
+    <p class="pr-title">Bekannt aus</p>
+    <div class="pr-track"><ul class="pr-row"><li><a class="pr-logo" href="https://pressemitteilungen.sueddeutsche.de/makerus-consulting-6297603" target="_blank" rel="noopener"><img src="assets/img/presse/sz.svg" alt="Süddeutsche Zeitung" loading="lazy"></a></li><li><a class="pr-logo" href="https://www.abendblatt.de/wirtschaft/Presseportal/article410933452/struktur-statt-zufall-wie-robert-schwagerus-mit-makerus-consulting-vermoegensaufbau-neu-denkt.html" target="_blank" rel="noopener"><img src="assets/img/presse/abendblatt.svg" alt="Hamburger Abendblatt" loading="lazy"></a></li><li><a class="pr-logo" href="https://www.morgenpost.de/wirtschaft/Presseportal/article411369815/strategische-verzahnung-robert-schwagerus-und-vinay-makker-von-makerus-consulting-verraten-wie-krankenversicherung-und-immobilienportfolio-zusammengehoeren.html" target="_blank" rel="noopener"><img src="assets/img/presse/morgenpost.svg" alt="Berliner Morgenpost" loading="lazy"></a></li><li><a class="pr-logo" href="https://www.fr.de/pressemitteilungen/immobilien-als-kapitalanlage-ohne-eigenen-aufwand-robert-schwagerus-und-vinay-makker-von-makerus-consulting-verraten-wie-professionelle-betreuung-94280065.html" target="_blank" rel="noopener"><img src="assets/img/presse/fr.svg" alt="Frankfurter Rundschau" loading="lazy"></a></li><li><a class="pr-logo" href="https://www.unternehmerjournal.de/vermoegensaufbau-robert-schwagerus-und-vinay-makker-von-makerus-consulting-und-das-drei-speichen-prinzip/" target="_blank" rel="noopener"><img src="assets/img/presse/unternehmerjournal.png" alt="Unternehmerjournal" loading="lazy"></a></li><li><a class="pr-logo" href="https://gewinnermagazin.de/robert-schwagerus-deutsche-proventus-ag/" target="_blank" rel="noopener"><img src="assets/img/presse/gewinnermagazin.png" alt="Gewinner Magazin" loading="lazy"></a></li><li><a class="pr-icon" data-ig href="#" target="_blank" rel="noopener" aria-label="Robert auf Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><rect x="3.2" y="3.2" width="17.6" height="17.6" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.4" cy="6.6" r="1" fill="currentColor" stroke="none"/></svg></a></li></ul><ul class="pr-row" aria-hidden="true"><li><a class="pr-logo" href="https://pressemitteilungen.sueddeutsche.de/makerus-consulting-6297603" target="_blank" rel="noopener"><img src="assets/img/presse/sz.svg" alt="Süddeutsche Zeitung" loading="lazy"></a></li><li><a class="pr-logo" href="https://www.abendblatt.de/wirtschaft/Presseportal/article410933452/struktur-statt-zufall-wie-robert-schwagerus-mit-makerus-consulting-vermoegensaufbau-neu-denkt.html" target="_blank" rel="noopener"><img src="assets/img/presse/abendblatt.svg" alt="Hamburger Abendblatt" loading="lazy"></a></li><li><a class="pr-logo" href="https://www.morgenpost.de/wirtschaft/Presseportal/article411369815/strategische-verzahnung-robert-schwagerus-und-vinay-makker-von-makerus-consulting-verraten-wie-krankenversicherung-und-immobilienportfolio-zusammengehoeren.html" target="_blank" rel="noopener"><img src="assets/img/presse/morgenpost.svg" alt="Berliner Morgenpost" loading="lazy"></a></li><li><a class="pr-logo" href="https://www.fr.de/pressemitteilungen/immobilien-als-kapitalanlage-ohne-eigenen-aufwand-robert-schwagerus-und-vinay-makker-von-makerus-consulting-verraten-wie-professionelle-betreuung-94280065.html" target="_blank" rel="noopener"><img src="assets/img/presse/fr.svg" alt="Frankfurter Rundschau" loading="lazy"></a></li><li><a class="pr-logo" href="https://www.unternehmerjournal.de/vermoegensaufbau-robert-schwagerus-und-vinay-makker-von-makerus-consulting-und-das-drei-speichen-prinzip/" target="_blank" rel="noopener"><img src="assets/img/presse/unternehmerjournal.png" alt="Unternehmerjournal" loading="lazy"></a></li><li><a class="pr-logo" href="https://gewinnermagazin.de/robert-schwagerus-deutsche-proventus-ag/" target="_blank" rel="noopener"><img src="assets/img/presse/gewinnermagazin.png" alt="Gewinner Magazin" loading="lazy"></a></li><li><a class="pr-icon" data-ig href="#" target="_blank" rel="noopener" aria-label="Robert auf Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><rect x="3.2" y="3.2" width="17.6" height="17.6" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.4" cy="6.6" r="1" fill="currentColor" stroke="none"/></svg></a></li></ul></div>
+  </section>
+
+  <!-- 3 Das erfährst du im Video: Simons drei Punkte, daneben das gesperrte Video -->
+  <section class="band" id="video">
+    <div class="wrap teaser">
+      <div>
+        <h2 class="display rv" style="--delay:.05s">
+          <span style="display:block">Das erfährst du</span>
+          <span class="tail" style="display:block">im Video.</span>
+        </h2>
+        <ul class="checks rv" style="--delay:.1s">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9.5"/><path d="M8 12.5l3 3 5-6"/></svg>Warum Immobilienpreise gerade so niedrig sind wie seit 2019 nicht mehr und wie du das für dich nutzt</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9.5"/><path d="M8 12.5l3 3 5-6"/></svg>Wie du eine Wohnung kaufst, modernisieren lässt und ab Tag 1 Mieteinnahmen hast, ohne alles selbst zu machen</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9.5"/><path d="M8 12.5l3 3 5-6"/></svg>Wie du dir beim Kauf Tausende Euro vom Staat zurückholst, ganz legal</li>
+        </ul>
+        <div class="cta-row rv"><a class="btn gold" href="#eintragen" data-to-form>Jetzt kostenfreies Video ansehen <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
+      </div>
+      <div class="rv" style="--delay:.12s">
+        <button class="locked" type="button" data-lift="44,16" data-to-form aria-label="Eintragen, um das Video freizuschalten">
+          <img src="assets/img/robert-poster.jpg" width="1600" height="900" alt="" loading="lazy">
+          <span class="ctr">
+            <span class="lock"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="4.5" y="10.5" width="15" height="10" rx="2.5"/><path d="M8 10.5V8a4 4 0 018 0v2.5"/></svg></span>
+            <b>Jetzt eintragen und ansehen</b>
+            <span>Das Video ist nach dem Eintragen für dich frei</span>
+          </span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4 Kundenstimmen: aus wohnung.html, Freigabe Robert offen -->
+  <section class="band" id="kunden">
+    <div class="wrap">
+      <div class="head">
+        <h2 class="display rv" style="--delay:.05s">
+          <span style="display:block">Das sagen unsere Kunden.</span>
+          <span class="tail" style="display:block">In ihren eigenen Worten.</span>
+        </h2>
+      </div>
+      <div class="kv-row">
+        <figure class="kv rv" style="--delay:0.00s">
+          <div class="kv-film">
+            <video playsinline preload="none" poster="assets/img/kunden/sebastian.jpg" src="assets/video/kunden/sebastian.mp4"></video>
+            <button class="kv-play" type="button" aria-label="Video von Sebastian abspielen"><span></span></button>
+          </div>
+          <figcaption><b>Sebastian</b><span>38, Unternehmer, drei Physiopraxen</span></figcaption>
+        </figure>
+        <figure class="kv rv" style="--delay:0.06s">
+          <div class="kv-film">
+            <video playsinline preload="none" poster="assets/img/kunden/andreas.jpg" src="assets/video/kunden/andreas.mp4"></video>
+            <button class="kv-play" type="button" aria-label="Video von Andreas abspielen"><span></span></button>
+          </div>
+          <figcaption><b>Andreas</b><span>aus Beckum</span></figcaption>
+        </figure>
+        <figure class="kv rv" style="--delay:0.12s">
+          <div class="kv-film">
+            <video playsinline preload="none" poster="assets/img/kunden/armel.jpg" src="assets/video/kunden/armel.mp4"></video>
+            <button class="kv-play" type="button" aria-label="Video von Armel abspielen"><span></span></button>
+          </div>
+          <figcaption><b>Armel</b><span>Familienvater aus Dortmund</span></figcaption>
+        </figure>
+        <figure class="kv rv" style="--delay:0.18s">
+          <div class="kv-film">
+            <video playsinline preload="none" poster="assets/img/kunden/ulrike.jpg" src="assets/video/kunden/ulrike.mp4"></video>
+            <button class="kv-play" type="button" aria-label="Video von Ulrike abspielen"><span></span></button>
+          </div>
+          <figcaption><b>Ulrike</b><span>aus der Nähe von Stuttgart</span></figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5 Häufige Fragen: Simons vier Fragen, danach Button -->
+  <section class="band" id="fragen">
+    <div class="wrap">
+      <div class="head">
+        <h2 class="display rv" style="--delay:.05s">
+          <span style="display:block">Was Menschen vor dem ersten Gespräch wissen wollen.</span>
+        </h2>
+      </div>
+      <div class="faq rv">
+        <details>
+          <summary>Kann ich ohne Eigenkapital kaufen?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></summary>
+          <p>Ja, das ist möglich. Banken finanzieren bei ausreichender Bonität den kompletten Kaufpreis inklusive Nebenkosten. Voraussetzung ist ein solides Einkommen und eine saubere Schufa. Ob das bei dir funktioniert, klären wir gemeinsam im ersten Gespräch.</p>
+        </details>
+        <details>
+          <summary>Wie lange dauert der Prozess?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></summary>
+          <p>Von der ersten Beratung bis zum Notartermin vergehen im Schnitt sechs bis zwölf Wochen. Wer gut vorbereitet ins Erstgespräch kommt, ist meistens schneller.</p>
+        </details>
+        <details>
+          <summary>Kümmert ihr euch auch um die Finanzierung?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></summary>
+          <p>Ja. Wir begleiten dich von der Objektauswahl über die Finanzierung bis zum Notartermin. Du musst dich um nichts alleine kümmern.</p>
+        </details>
+        <details>
+          <summary>Was kostet das Erstgespräch?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></summary>
+          <p>Nichts. Kein Haken, kein versteckter Pitch. Wir schauen uns deine Situation an und sagen dir ehrlich, ob eine Immobilie für dich Sinn ergibt. Die Entscheidung liegt bei dir.</p>
+        </details>
+      </div>
+      <div class="cta-final rv"><button class="vh-cta big" type="button" data-to-form><span><b>Jetzt kostenfreies Video ansehen</b><small>Eintragen und sofort loslegen</small></span><span class="go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></button></div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="row">
+    <div>Schwagerus Capital GmbH · Hafenstraße 142 · 59067 Hamm</div>
+    <div><a href="impressum.html">Impressum</a> &nbsp; <a href="datenschutz.html">Datenschutz</a></div>
+  </div>
+  <p class="legal">Das Video ersetzt keine individuelle Steuer, Finanzierungs oder Rechtsberatung. Alle Beispiele sind vereinfacht. Es werden keine Renditen oder Ergebnisse zugesagt. © 2026 Makerus Consulting</p>
+  <p class="by">Seite von <a href="https://krmqntno.github.io" target="_blank" rel="noopener">Kerim Quintino</a></p>
+</footer>
+
+<!-- Formular als Fenster: öffnet über jeden Knopf mit data-to-form -->
+<div class="vmodal" id="vmodal" role="dialog" aria-modal="true" aria-labelledby="vm-t">
+  <div class="lead-card" id="eintragen">
+    <button class="vclose" type="button" aria-label="Schließen" data-close>×</button>
+    <h3 id="vm-t">Wohin dürfen wir dir das Video schicken?</h3>
+    <p class="sub">Trag dich ein, danach geht es direkt zum Video.</p>
+          <form data-lead data-next="video.html" data-anliegen="Video Vermieter werden angefordert" novalidate>
+            <div class="field" data-f="name">
+              <label class="lbl" for="n1">Vorname</label>
+              <input id="n1" type="text" autocomplete="given-name" placeholder="Vorname">
+              <p class="msg">Bitte gib deinen Vornamen an.</p>
+            </div>
+            <div class="field" data-f="mail">
+              <label class="lbl" for="m1">E Mail</label>
+              <input id="m1" type="email" autocomplete="email" inputmode="email" placeholder="E Mail">
+              <p class="msg">Bitte gib eine gültige E Mail Adresse an.</p>
+            </div>
+            <div class="field" data-f="tel">
+              <label class="lbl" for="t1">Telefonnummer</label>
+              <input id="t1" type="tel" autocomplete="tel" inputmode="tel" placeholder="Telefonnummer">
+              <p class="msg">Bitte gib eine gültige Telefonnummer an.</p>
+            </div>
+            <label class="consent"><input type="checkbox"><span>Ich bin einverstanden, dass Makerus Consulting mir das Video und weitere Informationen zu meiner Anfrage per E Mail sendet, mich dazu telefonisch kontaktiert und meine Angaben dafür speichert. Mehr dazu in der <a href="datenschutz.html">Datenschutzerklärung</a>.</span></label>
+            <button class="btn block" type="submit">Jetzt kostenfreies Video ansehen
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </button>
+            <p class="form-error" role="alert"></p>
+          </form>
+  </div>
+</div>
+<script>
+(function(){var m=document.getElementById("vmodal");
+function open(){m.classList.add("on");document.documentElement.style.overflow="hidden";setTimeout(function(){var i=m.querySelector("input");if(i)i.focus();},60);}
+function close(){m.classList.remove("on");document.documentElement.style.overflow="";}
+document.addEventListener("click",function(e){var t=e.target.closest("[data-to-form]");if(t){e.preventDefault();e.stopPropagation();open();}},true);
+m.addEventListener("click",function(e){if(e.target===m||e.target.closest("[data-close]"))close();});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")close();});})();
+</script>
+<script>
+/* 3D Karte: Zeiger am Desktop, sanftes Schwenken ohne Zeiger (Handy) */
+(function(){var c=document.querySelector("[data-tilt]");if(!c||matchMedia("(prefers-reduced-motion: reduce)").matches)return;
+var t={x:0,y:0},n={x:0,y:0},last=0;
+c.addEventListener("pointermove",function(e){var r=c.getBoundingClientRect();t.x=(e.clientX-r.left)/r.width-.5;t.y=(e.clientY-r.top)/r.height-.5;last=performance.now();});
+c.addEventListener("pointerleave",function(){last=0;});
+function f(now){if(now-last>1200){var k=now/1000;t.x=Math.sin(k*.6)*.35;t.y=Math.cos(k*.45)*.22;}
+n.x+=(t.x-n.x)*.08;n.y+=(t.y-n.y)*.08;
+c.style.setProperty("--ry",(n.x*16).toFixed(2)+"deg");c.style.setProperty("--rx",(-n.y*12).toFixed(2)+"deg");
+c.style.setProperty("--px",n.x.toFixed(3));c.style.setProperty("--py",n.y.toFixed(3));
+c.style.setProperty("--gx",(50+n.x*90).toFixed(1)+"%");c.style.setProperty("--gy",(30+n.y*80).toFixed(1)+"%");
+requestAnimationFrame(f);}requestAnimationFrame(f);})();
+</script>
+<script src="assets/config.js"></script>
+<script src="assets/site.js"></script>
+<script src="assets/walk.js"></script>
+<script src="assets/kunden.js"></script>
+</body>
+</html>
