@@ -3,114 +3,113 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Dein Report und das Video · Makerus Consulting</title>
+<title>Das Video · Makerus Consulting</title>
+<meta name="description" content="Robert Schwagerus zeigt dir Schritt für Schritt, wie du mit deinem Gehalt Vermieter wirst.">
+<!-- Entwurfsstand zur Abnahme. Vor dem Livegang entfernen. -->
 <meta name="robots" content="noindex,nofollow">
 <meta name="referrer" content="strict-origin-when-cross-origin">
-<meta name="theme-color" content="#f2f3f6">
+<meta name="theme-color" content="#14110d">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230f291a'/%3E%3Cg stroke='%23c8bd8f' stroke-width='2' stroke-linecap='round'%3E%3Cpath d='M10 22V12M16 24V8M22 20V13'/%3E%3C/g%3E%3C/svg%3E">
+<!-- PostHog: dasselbe Projekt wie steuern-sparen und start/analyse.html, damit der Funnel als eine Person zählt (03.11.26) -->
+<script>
+    !function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.crossOrigin="anonymous",p.async=!0,p.src=s.api_host.replace(".i.posthog.com","-assets.i.posthog.com")+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="init capture register register_once register_for_session unregister unregister_for_session getFeatureFlag getFeatureFlagPayload isFeatureEnabled reloadFeatureFlags updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures on onFeatureFlags onSessionId getSurveys getActiveMatchingSurveys renderSurvey canRenderSurvey getNextSurveyStep identify setPersonProperties group resetGroups setPersonPropertiesForFlags resetPersonPropertiesForFlags setGroupPropertiesForFlags resetGroupPropertiesForFlags reset get_distinct_id getGroups get_session_id get_session_replay_url alias set_config startSessionRecording stopSessionRecording sessionRecordingStarted captureException loadToolbar get_property getSessionProperty createPersonProfile opt_in_capturing opt_out_capturing has_opted_in_capturing has_opted_out_capturing clear_opt_in_out_capturing debug".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+    posthog.init('phc_BCFSFfumSXa8aHAGkWzammvNik8RtVym6rZSVhaobeat', {
+      api_host: 'https://eu.i.posthog.com',
+      person_profiles: 'identified_only',
+      autocapture: true,
+      capture_pageview: true,
+      capture_pageleave: true,
+      capture_exceptions: true,
+      session_recording: { maskAllInputs: true }
+    });
+  </script>
 <link rel="preload" href="assets/fonts/geist-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="assets/site.css">
+<link rel="stylesheet" href="assets/walk.css">
+<link rel="stylesheet" href="assets/vermieter-video.css">
 </head>
-<body>
+<body class="walk-body">
+<div class="walk-bg mv-bg" aria-hidden="true">
+  <img class="mv-room" src="assets/img/film/wohnzimmer_neu.jpg" alt="" fetchpriority="high">
+  <div class="walk-shade"></div>
+</div>
 
 <header class="site-header">
   <div class="wrap in">
-    <a class="brand" href="index.html" aria-label="Makerus Consulting">
+    <a class="brand" href="#top" aria-label="Makerus Consulting">
       <span class="mark"><svg viewBox="0 0 24 24" fill="none" stroke="#c8bd8f" stroke-width="1.8" stroke-linecap="round"><path d="M7 17V9M12 20V4M17 15V10"/></svg></span>
       <span>Makerus<small>CONSULTING</small></span>
     </a>
-    <a class="pill-sm" data-pdf href="#" download>Report herunterladen</a>
+    <nav class="nav" aria-label="Seitenmenü">
+      <a href="#top">Das Video</a>
+      <a href="#gespraech">Gespräch</a>
+    </nav>
+    <a class="pill-sm" data-cta="kopf" href="https://robertschwagerus.github.io/start/analyse.html" target="_blank" rel="noopener">Gespräch buchen</a>
   </div>
 </header>
 
-<main class="sheet">
-  <div class="wrap">
-
-    <!-- Ohne Eintragung: freundlicher Hinweis statt Video -->
-    <div class="gate">
-      <p class="eyebrow" style="justify-content:center">Fast geschafft</p>
-      <h1 class="display"><span style="display:block">Trag dich zuerst ein.</span><span class="tail" style="display:block">Dann geht das Video auf.</span></h1>
-      <p class="lead">Report und Video sind gratis. Du brauchst nur deinen Namen, deine E Mail Adresse und deine Telefonnummer.</p>
-      <a class="btn" href="index.html#eintragen">Zum Formular</a>
-    </div>
-
-    <div class="thanks" data-after-gate>
-      <ol class="steps" aria-label="Ablauf">
-        <li class="on"><i>1</i>Eingetragen</li>
-        <li class="on"><i>2</i>Video ansehen</li>
-        <li><i>3</i>Gespräch, wenn du magst</li>
+<main id="top" class="sheet walk-page">
+  <!-- 1 Hero + Video: Aufbau nach steuern-sparen.makerus-consulting.de, Texte von Simon (Landing Page Vermieter.md) -->
+  <section class="mv-hero">
+    <div class="wrap">
+      <ol class="mv-steps rv" aria-label="Dein Fortschritt">
+        <li class="done"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></i><span>Eingetragen</span></li>
+        <li class="now"><i>2</i><span>Video ansehen</span></li>
+        <li><i>3</i><span>Gespräch buchen</span></li>
       </ol>
-
-      <p class="eyebrow">Rentenreport für Angestellte</p>
-      <h1 class="display">
-        <span style="display:block" data-title>Dein Report liegt bereit.</span>
-        <span class="tail" style="display:block">Und ich habe dir etwas aufgenommen.</span>
+      <p class="mv-hi rv" data-hi hidden></p>
+      <h1 class="display rv" style="--delay:.05s">
+        <span style="display:block">Schau dir an,</span>
+        <span class="tail" style="display:block">wie das Modell funktioniert.</span>
       </h1>
-
-      <div class="vgrid">
-        <div>
-          <div class="player">
-            <video controls controlsList="nodownload" playsinline preload="metadata" aria-label="Video von Robert Schwagerus"></video>
-            <button class="play" type="button" aria-label="Video abspielen"><span><svg viewBox="0 0 24 24" fill="currentColor"><path d="M7 4.5v15a1 1 0 001.5.86l12.5-7.5a1 1 0 000-1.72L8.5 3.64A1 1 0 007 4.5z"/></svg></span></button>
-          </div>
-          <div class="vmeta"><span>Robert Schwagerus · Makerus Consulting</span><span>5:08 · mit Untertiteln</span></div>
+      <p class="lead rv" style="--delay:.1s">Robert zeigt dir in diesem Video Schritt für Schritt, wie du mit deinem Gehalt Vermieter wirst. Echte Zahlen. Echte Wohnungen. Kein Verkaufspitch.</p>
+      <div class="mv rv" style="--delay:.14s">
+        <video id="mainVideo" poster="assets/img/robert-vermieter-poster.jpg" playsinline autoplay muted preload="auto" controls controlsList="nodownload" aria-label="Video von Robert Schwagerus">
+          <source src="assets/video/robert-vermieter.mp4" type="video/mp4">
+        </video>
+        <div class="mv-sound" id="playOverlay" role="button" tabindex="0" aria-label="Ton einschalten">
+          <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 5L6 9H2v6h4l5 4V5z"/><path d="M15.54 8.46a5 5 0 010 7.07"/><path d="M19.07 4.93a10 10 0 010 14.14"/></svg></span>
+          <b>Für Ton tippen</b>
         </div>
-
-        <aside class="side">
-          <div class="box">
-            <div class="pdfbox">
-              <img src="assets/img/cover.jpg" width="84" height="119" alt="Cover des Rentenreports">
-              <div>
-                <h3>Dein Rentenreport</h3>
-                <p>8 Seiten, 5 Minuten Lesezeit.</p>
-                <a class="btn" data-pdf href="#" download>
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v11M7 11l5 5 5-5M5 20h14"/></svg>
-                  PDF laden
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="box">
-            <h3>Leg das schon mal bereit</h3>
-            <p>Wenn du mit Roberts Team sprichst, rechnet ihr mit deinen echten Werten statt mit einem Beispiel.</p>
-            <ul class="todo">
-              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Deine letzte Renteninformation der Deutschen Rentenversicherung</li>
-              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Deine letzte Gehaltsabrechnung</li>
-              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Einen Überblick über laufende Kredite</li>
-            </ul>
-          </div>
-        </aside>
       </div>
-
-      <section class="next" id="gespraech">
-        <div>
-          <p class="eyebrow" style="color:var(--gold)">Wenn du magst</p>
-          <h2 class="display">
-            <span style="display:block">Rechnet es mit deinen Zahlen.</span>
-            <span class="tail" style="display:block">Gratis und unverbindlich.</span>
-          </h2>
-          <p>Ein Gespräch mit Roberts Team, bei dem es um deine Zahlen geht und nicht um ein Produkt. Passt es bei dir noch nicht, sagen sie dir das direkt. Ob du den Schritt gehst, entscheidest allein du.</p>
-        </div>
-        <div class="acts">
-          <a class="btn gold block" data-book href="#">Erstgespräch buchen</a>
-          <a class="btn ghost block" data-ig target="_blank" rel="noopener" href="#" style="background:transparent;color:#fff;border-color:rgba(255,255,255,.28)">Robert auf Instagram</a>
-        </div>
-        <div data-cal hidden style="grid-column:1/-1"></div>
-      </section>
+      <div class="cta-c rv" style="--delay:.18s" id="cta-video"><a class="vh-cta" data-cta="unter_video" href="https://robertschwagerus.github.io/start/analyse.html" target="_blank" rel="noopener"><span><b>Gespräch mit einem Berater buchen</b><small>30 Minuten, kostenfrei und unverbindlich</small></span><span class="go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a></div>
+      <div class="mv-proof rv"><a class="g-chip" href="https://www.google.com/maps/place/Makerus+Consulting/data=!4m8!3m7!1s0xa32d0dbacae935a7:0xc7ca45e838e75d0e!8m2!3d51.6758876!4d7.7650414!9m1!1b1" target="_blank" rel="noopener" aria-label="Google Bewertungen von Makerus Consulting öffnen"><span class="ci gw"><svg class="g" viewBox="0 0 48 48"><path fill="#FFC107" d="M43.6 20.5H42V20H24v8h11.3C33.7 32.7 29.2 36 24 36c-6.6 0-12-5.4-12-12s5.4-12 12-12c3.1 0 5.8 1.2 7.9 3.1l5.7-5.7C34.1 6.1 29.3 4 24 4 12.9 4 4 12.9 4 24s8.9 20 20 20 20-8.9 20-20c0-1.3-.1-2.4-.4-3.5z"/><path fill="#FF3D00" d="M6.3 14.7l6.6 4.8C14.7 15.1 19 12 24 12c3.1 0 5.8 1.2 7.9 3.1l5.7-5.7C34.1 6.1 29.3 4 24 4 16.3 4 9.7 8.3 6.3 14.7z"/><path fill="#4CAF50" d="M24 44c5.2 0 9.9-2 13.4-5.2l-6.2-5.2C29.2 35.1 26.7 36 24 36c-5.2 0-9.6-3.3-11.3-8l-6.5 5C9.5 39.6 16.2 44 24 44z"/><path fill="#1976D2" d="M43.6 20.5H42V20H24v8h11.3c-.8 2.2-2.2 4.2-4.1 5.6l6.2 5.2C37 39.2 44 34 44 24c0-1.3-.1-2.4-.4-3.5z"/></svg></span><span><b><span class="stars"><svg viewBox="0 0 24 24"><path d="M12 2.8l2.8 5.9 6.4.8-4.7 4.4 1.2 6.4L12 17.2l-5.7 3.1 1.2-6.4L2.8 9.5l6.4-.8z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2.8l2.8 5.9 6.4.8-4.7 4.4 1.2 6.4L12 17.2l-5.7 3.1 1.2-6.4L2.8 9.5l6.4-.8z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2.8l2.8 5.9 6.4.8-4.7 4.4 1.2 6.4L12 17.2l-5.7 3.1 1.2-6.4L2.8 9.5l6.4-.8z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2.8l2.8 5.9 6.4.8-4.7 4.4 1.2 6.4L12 17.2l-5.7 3.1 1.2-6.4L2.8 9.5l6.4-.8z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2.8l2.8 5.9 6.4.8-4.7 4.4 1.2 6.4L12 17.2l-5.7 3.1 1.2-6.4L2.8 9.5l6.4-.8z"/></svg></span> 5,0</b><small>120 Google Bewertungen</small></span></a></div>
     </div>
-  </div>
+  </section>
+
+  <!-- Belege: Bekannt aus wie vermieter.html -->
+  <section class="pr-band" aria-label="Bekannt aus">
+    <p class="pr-title">Bekannt aus</p>
+    <div class="pr-track"><ul class="pr-row"><li><a class="pr-logo" href="https://pressemitteilungen.sueddeutsche.de/makerus-consulting-6297603" target="_blank" rel="noopener"><img src="assets/img/presse/sz.svg" alt="Süddeutsche Zeitung" loading="lazy"></a></li><li><a class="pr-logo" href="https://www.abendblatt.de/wirtschaft/Presseportal/article410933452/struktur-statt-zufall-wie-robert-schwagerus-mit-makerus-consulting-vermoegensaufbau-neu-denkt.html" target="_blank" rel="noopener"><img src="assets/img/presse/abendblatt.svg" alt="Hamburger Abendblatt" loading="lazy"></a></li><li><a class="pr-logo" href="https://www.morgenpost.de/wirtschaft/Presseportal/article411369815/strategische-verzahnung-robert-schwagerus-und-vinay-makker-von-makerus-consulting-verraten-wie-krankenversicherung-und-immobilienportfolio-zusammengehoeren.html" target="_blank" rel="noopener"><img src="assets/img/presse/morgenpost.svg" alt="Berliner Morgenpost" loading="lazy"></a></li><li><a class="pr-logo" href="https://www.fr.de/pressemitteilungen/immobilien-als-kapitalanlage-ohne-eigenen-aufwand-robert-schwagerus-und-vinay-makker-von-makerus-consulting-verraten-wie-professionelle-betreuung-94280065.html" target="_blank" rel="noopener"><img src="assets/img/presse/fr.svg" alt="Frankfurter Rundschau" loading="lazy"></a></li><li><a class="pr-logo" href="https://www.unternehmerjournal.de/vermoegensaufbau-robert-schwagerus-und-vinay-makker-von-makerus-consulting-und-das-drei-speichen-prinzip/" target="_blank" rel="noopener"><img src="assets/img/presse/unternehmerjournal.png" alt="Unternehmerjournal" loading="lazy"></a></li><li><a class="pr-logo" href="https://gewinnermagazin.de/robert-schwagerus-deutsche-proventus-ag/" target="_blank" rel="noopener"><img src="assets/img/presse/gewinnermagazin.png" alt="Gewinner Magazin" loading="lazy"></a></li><li><a class="pr-icon" data-ig href="#" target="_blank" rel="noopener" aria-label="Robert auf Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><rect x="3.2" y="3.2" width="17.6" height="17.6" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.4" cy="6.6" r="1" fill="currentColor" stroke="none"/></svg></a></li></ul><ul class="pr-row" aria-hidden="true"><li><a class="pr-logo" href="https://pressemitteilungen.sueddeutsche.de/makerus-consulting-6297603" target="_blank" rel="noopener"><img src="assets/img/presse/sz.svg" alt="Süddeutsche Zeitung" loading="lazy"></a></li><li><a class="pr-logo" href="https://www.abendblatt.de/wirtschaft/Presseportal/article410933452/struktur-statt-zufall-wie-robert-schwagerus-mit-makerus-consulting-vermoegensaufbau-neu-denkt.html" target="_blank" rel="noopener"><img src="assets/img/presse/abendblatt.svg" alt="Hamburger Abendblatt" loading="lazy"></a></li><li><a class="pr-logo" href="https://www.morgenpost.de/wirtschaft/Presseportal/article411369815/strategische-verzahnung-robert-schwagerus-und-vinay-makker-von-makerus-consulting-verraten-wie-krankenversicherung-und-immobilienportfolio-zusammengehoeren.html" target="_blank" rel="noopener"><img src="assets/img/presse/morgenpost.svg" alt="Berliner Morgenpost" loading="lazy"></a></li><li><a class="pr-logo" href="https://www.fr.de/pressemitteilungen/immobilien-als-kapitalanlage-ohne-eigenen-aufwand-robert-schwagerus-und-vinay-makker-von-makerus-consulting-verraten-wie-professionelle-betreuung-94280065.html" target="_blank" rel="noopener"><img src="assets/img/presse/fr.svg" alt="Frankfurter Rundschau" loading="lazy"></a></li><li><a class="pr-logo" href="https://www.unternehmerjournal.de/vermoegensaufbau-robert-schwagerus-und-vinay-makker-von-makerus-consulting-und-das-drei-speichen-prinzip/" target="_blank" rel="noopener"><img src="assets/img/presse/unternehmerjournal.png" alt="Unternehmerjournal" loading="lazy"></a></li><li><a class="pr-logo" href="https://gewinnermagazin.de/robert-schwagerus-deutsche-proventus-ag/" target="_blank" rel="noopener"><img src="assets/img/presse/gewinnermagazin.png" alt="Gewinner Magazin" loading="lazy"></a></li><li><a class="pr-icon" data-ig href="#" target="_blank" rel="noopener" aria-label="Robert auf Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><rect x="3.2" y="3.2" width="17.6" height="17.6" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.4" cy="6.6" r="1" fill="currentColor" stroke="none"/></svg></a></li></ul></div>
+  </section>
+
+  <!-- 4 Finaler Knopf -->
+  <section class="band" id="gespraech">
+    <div class="wrap mv-end">
+      <h2 class="display rv" style="--delay:.05s">
+        <span style="display:block">Du hast das Video gesehen.</span>
+        <span class="tail" style="display:block">Du kennst die Zahlen.</span>
+      </h2>
+      <p class="lead rv" style="--delay:.1s">Jetzt fehlt nur noch ein Gespräch. 30 Minuten. Ein Berater aus Roberts Team schaut sich deine Situation an und rechnet mit dir durch, ob und wie das Modell für dich funktioniert. Ehrlich, ohne Druck.</p>
+      <div class="cta-c rv" style="--delay:.14s"><a class="vh-cta big" data-cta="ende" href="https://robertschwagerus.github.io/start/analyse.html" target="_blank" rel="noopener"><span><b>Gespräch mit einem Berater buchen</b><small>30 Minuten, kostenfrei und unverbindlich</small></span><span class="go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a></div>
+      <p class="trust rv">500+ Kunden beraten<i>·</i>Seit über 10 Jahren in der Branche</p>
+    </div>
+  </section>
 </main>
+
+<div class="mv-sticky" id="mvSticky" aria-hidden="true"><a class="vh-cta" data-cta="leiste_handy" href="https://robertschwagerus.github.io/start/analyse.html" target="_blank" rel="noopener"><span><b>Gespräch mit einem Berater buchen</b><small>30 Minuten, kostenfrei und unverbindlich</small></span><span class="go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a></div>
 
 <footer class="site-footer">
   <div class="row">
-    <div><strong style="color:var(--fg);font-weight:500">Makerus Consulting</strong><br>Schwagerus Capital GmbH<br>Hafenstraße 142, 59067 Hamm</div>
+    <div>Schwagerus Capital GmbH · Hafenstraße 142 · 59067 Hamm</div>
     <div><a href="impressum.html">Impressum</a> &nbsp; <a href="datenschutz.html">Datenschutz</a></div>
   </div>
-  <p class="legal">Dieser Report ersetzt keine individuelle Steuer, Renten oder Rechtsberatung. Alle Beispiele sind vereinfacht, Rechtsstand 2026. Es werden keine Renditen oder Ergebnisse zugesagt. © 2026 Makerus Consulting</p>
+  <p class="legal">Das Video ersetzt keine individuelle Steuer, Finanzierungs oder Rechtsberatung. Alle Beispiele sind vereinfacht. Es werden keine Renditen oder Ergebnisse zugesagt. © 2026 Makerus Consulting</p>
   <p class="by">Seite von <a href="https://krmqntno.github.io" target="_blank" rel="noopener">Kerim Quintino</a></p>
 </footer>
 
 <script src="assets/config.js"></script>
 <script src="assets/site.js"></script>
+<script src="assets/vermieter-video.js"></script>
 </body>
 </html>

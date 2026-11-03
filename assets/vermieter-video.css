@@ -1,0 +1,97 @@
+/* Videoseite nach dem Opt-in Vermieter (03.11.26): Aufbau steuern-sparen, Design wie vermieter.html */
+.mv-hero{padding:118px 0 72px;text-align:center}
+.mv-hero h1.display{color:#fff;text-shadow:0 4px 30px rgba(0,0,0,.45);font-size:clamp(34px,5.4vw,62px)}
+.mv-hero h1 .tail{color:var(--gold)}
+.mv-hero .lead{color:rgba(255,255,255,.88);text-shadow:0 2px 14px rgba(0,0,0,.55);margin:20px auto 0;max-width:40rem}
+.mv{position:relative;max-width:960px;margin:40px auto 0;aspect-ratio:16/9;border-radius:24px;overflow:hidden;background:#000;
+  border:1px solid rgba(255,255,255,.22);box-shadow:0 50px 100px -30px rgba(0,0,0,.8)}
+.mv video{width:100%;height:100%;object-fit:cover;display:block}
+.mv-sound{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;cursor:pointer;
+  background:linear-gradient(180deg,rgba(10,8,5,.15),rgba(10,8,5,.55));color:#fff;transition:opacity .3s}
+.mv-sound.hidden{opacity:0;pointer-events:none}
+.mv-sound .ic{width:84px;height:84px;border-radius:50%;display:grid;place-items:center;color:var(--green);
+  background:linear-gradient(135deg,#efe6bf,var(--gold) 55%,#b3a46a);box-shadow:0 18px 40px -10px rgba(200,189,143,.7);animation:mvPulse 2.2s ease-in-out infinite}
+.mv-sound .ic svg{width:34px;height:34px}
+.mv-sound b{font-size:17px;font-weight:600;text-shadow:0 2px 12px rgba(0,0,0,.6)}
+@keyframes mvPulse{0%,100%{transform:scale(1)}50%{transform:scale(1.07)}}
+@media(prefers-reduced-motion:reduce){.mv-sound .ic{animation:none}}
+/* Goldknopf wie vermieter.html */
+.cta-c{display:flex;justify-content:center;margin-top:34px}
+.vh-cta{display:inline-flex;align-items:center;gap:18px;padding:12px 12px 12px 26px;border-radius:18px;text-align:left;text-decoration:none;color:var(--green);
+  background:linear-gradient(135deg,#efe6bf,var(--gold) 55%,#b3a46a);box-shadow:0 18px 40px -14px rgba(200,189,143,.7);transition:transform .2s,box-shadow .2s}
+.vh-cta:hover{transform:translateY(-2px);box-shadow:0 24px 50px -14px rgba(200,189,143,.85)}
+.vh-cta b{display:block;font-size:17px;font-weight:600;letter-spacing:-.01em}
+.vh-cta small{display:block;font-size:13px;opacity:.75;margin-top:2px}
+.vh-cta .go{width:48px;height:48px;border-radius:13px;background:rgba(15,41,26,.12);display:grid;place-items:center;flex:none}
+.vh-cta .go svg{width:20px;height:20px}
+.vh-cta.big{padding:16px 16px 16px 34px;gap:26px;border-radius:22px}
+.vh-cta.big b{font-size:clamp(18px,2vw,22px)}
+.vh-cta.big small{font-size:14px}
+.vh-cta.big .go{width:58px;height:58px;border-radius:16px}
+/* Sektionen mittig */
+.walk-page .band .head{margin-left:auto;margin-right:auto;text-align:center}
+#fragen .faq{margin-left:auto;margin-right:auto}
+.mv-end{text-align:center}
+.mv-end .lead{margin:22px auto 0;max-width:40rem}
+.walk-page .band:last-of-type{padding-bottom:12vh}
+.trust{margin:16px 0 0;text-align:center;font-size:13.5px;font-weight:600;color:rgba(255,255,255,.85);text-shadow:0 2px 10px rgba(0,0,0,.5)}
+.trust i{font-style:normal;color:var(--gold);padding:0 8px}
+/* Kundenstimmen: drei Karten nebeneinander, Zitat darunter */
+.kv-row{grid-template-columns:repeat(3,minmax(0,1fr));max-width:980px;margin-left:auto;margin-right:auto;gap:22px}
+.kv blockquote{margin:12px 0 0;padding:16px 18px;border-radius:16px;font-size:15px;line-height:1.55;color:rgba(255,255,255,.92);text-shadow:none;
+  background:rgba(14,12,9,.5);border:1px solid rgba(255,255,255,.14);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px)}
+@media(max-width:900px){.kv-row{display:flex;flex-direction:column;align-items:center;overflow:visible;margin-right:auto;padding-right:0}.kv{flex:none;width:100%;max-width:400px}}
+@media(max-width:600px){
+  .mv-hero{padding:92px 0 48px}
+  .mv-hero h1.display{font-size:32px}
+  .mv-hero .lead{font-size:15px;line-height:1.5}
+  .mv{margin-top:26px;border-radius:16px}
+  .mv-sound .ic{width:64px;height:64px}.mv-sound .ic svg{width:26px;height:26px}
+  .vh-cta{display:flex;width:100%}
+  .vh-cta.big{padding:14px 14px 14px 22px}
+}
+/* Runde 2 (03.11.26): Wohnzimmer Hintergrund, Schrittleiste, Begrüßung, Knopf an Video, Belege */
+.mv-bg .mv-room{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 40%;transform:scale(1.04);animation:mvDrift 40s ease-in-out infinite alternate}
+@keyframes mvDrift{to{transform:scale(1.1) translateY(-1.5%)}}
+.mv-bg .walk-shade{background:linear-gradient(180deg,rgba(12,10,7,.55),rgba(12,10,7,.72) 60%,rgba(12,10,7,.86))}
+@media(prefers-reduced-motion:reduce){.mv-bg .mv-room{animation:none}}
+.mv-steps{list-style:none;margin:0 auto 22px;padding:6px;display:inline-flex;gap:4px;border-radius:999px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px)}
+.mv-steps li{display:flex;align-items:center;gap:8px;padding:7px 14px 7px 8px;border-radius:999px;font-size:13px;font-weight:500;color:rgba(255,255,255,.6)}
+.mv-steps i{width:22px;height:22px;border-radius:50%;display:grid;place-items:center;font-style:normal;font-size:11.5px;font-weight:600;background:rgba(255,255,255,.12);color:rgba(255,255,255,.8)}
+.mv-steps i svg{width:13px;height:13px}
+.mv-steps .done{color:rgba(255,255,255,.85)}
+.mv-steps .done i{background:var(--gold);color:var(--green)}
+.mv-steps .now{background:rgba(255,255,255,.95);color:var(--green)}
+.mv-steps .now i{background:var(--green);color:var(--gold)}
+.mv-hi{margin:0 0 10px;color:var(--gold);font-size:clamp(17px,1.8vw,20px);font-weight:500;text-shadow:0 2px 12px rgba(0,0,0,.5)}
+/* Knopf leuchtet ab 70 % Video */
+.vh-cta.lit{animation:mvLit 1.8s ease-in-out 3;transform:scale(1.06)}
+@keyframes mvLit{0%,100%{box-shadow:0 18px 40px -14px rgba(200,189,143,.7)}50%{box-shadow:0 0 0 10px rgba(200,189,143,.22),0 24px 60px -10px rgba(200,189,143,1)}}
+/* Google Chip unter dem Knopf */
+.mv-proof{display:flex;justify-content:center;margin-top:18px}
+.g-chip{display:inline-flex;align-items:center;gap:11px;padding:9px 16px 9px 10px;border-radius:14px;text-decoration:none;color:#1b1b18;background:rgba(255,255,255,.82);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border:1px solid rgba(255,255,255,.9);box-shadow:0 14px 34px -14px rgba(0,0,0,.5)}
+.g-chip:hover{background:#fff}
+.g-chip b{display:block;font-size:13.5px;font-weight:600;line-height:1.25}
+.g-chip small{display:block;font-size:12px;color:#6b6b66}
+.g-chip .ci{width:30px;height:30px;border-radius:9px;display:grid;place-items:center;background:#fff;box-shadow:inset 0 0 0 1px rgba(0,0,0,.08)}
+.g-chip svg.g{width:17px;height:17px}
+.g-chip .stars{display:inline-flex;gap:1px;vertical-align:-1px;margin-right:4px}
+.g-chip .stars svg{width:12px;height:12px;fill:#f5b301}
+/* Bekannt aus wie vermieter.html: ohne Fläche, Logos weiß */
+.pr-band{background:transparent;backdrop-filter:none;-webkit-backdrop-filter:none}
+.pr-title{color:rgba(255,255,255,.75);text-shadow:0 2px 12px rgba(0,0,0,.5)}
+.pr-row li{border-right-color:rgba(255,255,255,.22)}
+.pr-logo img{filter:brightness(0) invert(1) drop-shadow(0 2px 8px rgba(0,0,0,.45));opacity:.8}
+.pr-logo:hover img{filter:brightness(0) invert(1);opacity:1}
+.pr-icon{color:rgba(255,255,255,.8)}
+/* Feste Leiste am Handy, sobald der Knopf unter dem Video weg ist */
+.mv-sticky{display:none}
+@media(max-width:760px){
+  .mv-sticky{display:block;position:fixed;left:12px;right:12px;bottom:12px;z-index:60;transform:translateY(140%);transition:transform .35s cubic-bezier(.2,.8,.2,1)}
+  .mv-sticky.on{transform:none}
+  .mv-sticky .vh-cta{display:flex;width:100%;padding:10px 10px 10px 18px;box-shadow:0 18px 40px -10px rgba(0,0,0,.6)}
+  .mv-sticky .vh-cta b{font-size:15.5px}.mv-sticky .vh-cta small{font-size:12px}
+  .mv-sticky .vh-cta .go{width:42px;height:42px}
+  .mv-steps li{padding:6px 10px 6px 6px;font-size:12px}
+  .mv-steps li:not(.now) span{display:none}
+}
