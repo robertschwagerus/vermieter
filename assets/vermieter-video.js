@@ -34,6 +34,13 @@
     var url = new URL(a.href);
     inc.forEach(function (val, k) { if (k.indexOf("utm_") === 0 || k === "ref") { url.searchParams.set(k, val); had = true; } });
     if (!url.searchParams.has("utm_source")) { url.searchParams.set("utm_source", "videolp"); url.searchParams.set("utm_medium", "cta"); }
+    // Calendly: Name und E Mail aus den Fragen vorausfüllen (03.11.26)
+    try { var ml = JSON.parse(localStorage.getItem("makerus_lead") || "null");
+      if (ml && url.hostname.indexOf("calendly.com") > -1) {
+        var nm = ((ml.firstname || "") + " " + (ml.lastname || "")).trim();
+        if (nm) url.searchParams.set("name", nm);
+        if (ml.email) url.searchParams.set("email", ml.email);
+      } } catch (x) {}
     a.href = url.toString();
     a.addEventListener("click", function () {
       ph("cta_click", { cta_location: a.getAttribute("data-cta"), video_time: v ? Math.round(v.currentTime) : null,

@@ -1,0 +1,519 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Kostenfreies Video freischalten · Makerus Consulting</title>
+<!-- Entwurfsstand zur Abnahme. Vor dem Livegang entfernen. -->
+<meta name="robots" content="noindex,nofollow">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="theme-color" content="#14110d">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230f291a'/%3E%3Cg stroke='%23c8bd8f' stroke-width='2' stroke-linecap='round'%3E%3Cpath d='M10 22V12M16 24V8M22 20V13'/%3E%3C/g%3E%3C/svg%3E">
+<!-- PostHog wie start/analyse.html -->
+<script>
+    !function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.crossOrigin="anonymous",p.async=!0,p.src=s.api_host.replace(".i.posthog.com","-assets.i.posthog.com")+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="init capture register register_once register_for_session unregister unregister_for_session getFeatureFlag getFeatureFlagPayload isFeatureEnabled reloadFeatureFlags updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures on onFeatureFlags onSessionId getSurveys getActiveMatchingSurveys renderSurvey canRenderSurvey getNextSurveyStep identify setPersonProperties group resetGroups setPersonPropertiesForFlags resetPersonPropertiesForFlags setGroupPropertiesForFlags resetGroupPropertiesForFlags reset get_distinct_id getGroups get_session_id get_session_replay_url alias set_config startSessionRecording stopSessionRecording sessionRecordingStarted captureException loadToolbar get_property getSessionProperty createPersonProfile opt_in_capturing opt_out_capturing has_opted_in_capturing has_opted_out_capturing clear_opt_in_out_capturing debug".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+    posthog.init('phc_BCFSFfumSXa8aHAGkWzammvNik8RtVym6rZSVhaobeat', {
+      api_host: 'https://eu.i.posthog.com',
+      person_profiles: 'identified_only',
+      autocapture: true,
+      capture_pageview: true,
+      capture_pageleave: true,
+      capture_exceptions: true,
+      session_recording: { maskAllInputs: true }
+    });
+  </script>
+<link rel="preload" href="assets/fonts/geist-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/site.css">
+<link rel="stylesheet" href="assets/walk.css">
+<link rel="stylesheet" href="assets/vermieter-video.css">
+<link rel="stylesheet" href="assets/analyse.css">
+<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+</head>
+<body class="walk-body">
+<!-- Fragen, HubSpot, Calendly und PostHog 1:1 aus robertschwagerus.github.io/start/analyse.html, Gestaltung wie vermieter (03.11.26) -->
+<div class="walk-bg mv-bg" aria-hidden="true">
+  <img class="mv-room" id="bgImg" src="assets/img/film/kueche_neu.jpg" alt="" fetchpriority="high">
+  <div class="walk-shade"></div>
+</div>
+
+<header class="site-header">
+  <div class="wrap in">
+    <a class="brand" href="index.html" aria-label="Makerus Consulting">
+      <span class="mark"><svg viewBox="0 0 24 24" fill="none" stroke="#c8bd8f" stroke-width="1.8" stroke-linecap="round"><path d="M7 17V9M12 20V4M17 15V10"/></svg></span>
+      <span>Makerus<small>CONSULTING</small></span>
+    </a>
+    <a class="pill-sm an-back" href="index.html">Zurück</a>
+  </div>
+</header>
+
+<main class="sheet walk-page an-page">
+  <section class="an-hero">
+    <div class="wrap">
+      <ol class="mv-steps" aria-label="Dein Fortschritt">
+        <li class="now"><i>1</i><span>Fragen beantworten</span></li>
+        <li><i>2</i><span>Video ansehen</span></li>
+        <li><i>3</i><span>Gespräch buchen</span></li>
+      </ol>
+      <div class="an-card">
+        <div class="progress-wrap" id="progressWrap">
+          <div class="progress-label" id="progressLabel">1 / 8</div>
+          <div class="progress-bar"><div class="progress-fill" id="progressFill"></div></div>
+        </div>
+        <div class="screen-wrap">
+
+      <!-- ===== SCREEN 2: PAIN 1 — Zu viele Steuern? ===== -->
+      <section class="screen active" data-screen="2">
+        <h1>Bist du der Meinung, du zahlst zu viele Steuern?</h1>
+        <div class="options grid-2" data-question="pain_steuern">
+          <button class="option card" data-value="Ja">
+            <span class="option-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            </span>
+            <span class="option-label">Ja</span>
+          </button>
+          <button class="option card" data-value="Nein">
+            <span class="option-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+            </span>
+            <span class="option-label">Nein</span>
+          </button>
+        </div>
+      </section>
+
+      <!-- ===== SCREEN 3: PAIN 2 — Lohnsteuer zurückholen? ===== -->
+      <section class="screen" data-screen="3">
+        <h1>Würdest du gerne wissen, wie viel deiner Lohnsteuer du legal zurückholen kannst?</h1>
+        <div class="options grid-2" data-question="pain_zurueckholen">
+          <button class="option card" data-value="Ja">
+            <span class="option-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            </span>
+            <span class="option-label">Ja</span>
+          </button>
+          <button class="option card" data-value="Nein">
+            <span class="option-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+            </span>
+            <span class="option-label">Nein</span>
+          </button>
+        </div>
+      </section>
+
+      <!-- ===== SCREEN 4: VISION — Prozent umwandeln ===== -->
+      <section class="screen" data-screen="4">
+        <h1>Wie viel deiner Lohnsteuer würdest du gerne in privates Vermögen umwandeln?</h1>
+        <div class="options grid-5" data-question="vision_prozent">
+          <button class="option percent" data-value="20%">
+            <span class="percent-value">20%</span>
+            <span class="percent-label">Etwas</span>
+          </button>
+          <button class="option percent" data-value="40%">
+            <span class="percent-value">40%</span>
+            <span class="percent-label">Solide</span>
+          </button>
+          <button class="option percent" data-value="60%">
+            <span class="percent-value">60%</span>
+            <span class="percent-label">Deutlich</span>
+          </button>
+          <button class="option percent" data-value="80%">
+            <span class="percent-value">80%</span>
+            <span class="percent-label">Sehr viel</span>
+          </button>
+          <button class="option percent" data-value="100%">
+            <span class="percent-value">100%</span>
+            <span class="percent-label">Alles</span>
+          </button>
+        </div>
+      </section>
+
+      <!-- ===== SCREEN 5: RATIONAL — Situation ===== -->
+      <section class="screen" data-screen="5">
+        <h1>Wie sieht deine aktuelle Situation aus?</h1>
+        <div class="options" data-question="situation">
+          <button class="option" data-value="Angestellt">
+            <span class="option-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+            </span>
+            <span class="option-label">Angestellt</span>
+          </button>
+          <button class="option" data-value="Selbstständig">
+            <span class="option-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l3 6 6 1-4.5 4.5L18 20l-6-3-6 3 1.5-6.5L3 9l6-1z"/></svg>
+            </span>
+            <span class="option-label">Selbstständig</span>
+          </button>
+          <button class="option" data-value="In Ausbildung oder Studium">
+            <span class="option-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10L12 5 2 10l10 5 10-5z"/><path d="M6 12v5c3 2 9 2 12 0v-5"/></svg>
+            </span>
+            <span class="option-label">In Ausbildung oder Studium</span>
+          </button>
+          <button class="option" data-value="Aktuell auf Jobsuche">
+            <span class="option-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            </span>
+            <span class="option-label">Aktuell auf Jobsuche</span>
+          </button>
+        </div>
+      </section>
+
+      <!-- ===== SCREEN 6: RATIONAL — Netto-Einkommen ===== -->
+      <section class="screen" data-screen="6">
+        <h1>Wie viel verdienst du monatlich netto?</h1>
+        <div class="options" data-question="netto">
+          <button class="option" data-value="weniger als 2.000 €"><span class="option-label">weniger als 2.000 €</span></button>
+          <button class="option" data-value="2.000 € – 3.000 €"><span class="option-label">2.000 € bis 3.000 €</span></button>
+          <button class="option" data-value="3.000 € – 4.000 €"><span class="option-label">3.000 € bis 4.000 €</span></button>
+          <button class="option" data-value="4.000 € – 5.000 €"><span class="option-label">4.000 € bis 5.000 €</span></button>
+          <button class="option" data-value="mehr als 5.000 €"><span class="option-label">mehr als 5.000 €</span></button>
+        </div>
+      </section>
+
+      <!-- ===== SCREEN 7: RATIONAL — Angespart ===== -->
+      <section class="screen" data-screen="7">
+        <h1>Wie viel Geld hast du bereits angespart?</h1>
+        <div class="options grid-4" data-question="angespart">
+          <button class="option card" data-value="weniger als 5.000 €">
+            <span class="option-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg>
+            </span>
+            <span class="option-label">weniger als 5.000 €</span>
+          </button>
+          <button class="option card" data-value="5.000 € – 20.000 €">
+            <span class="option-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="6" width="20" height="12" rx="2"/><circle cx="12" cy="12" r="2"/><path d="M6 12h.01M18 12h.01"/></svg>
+            </span>
+            <span class="option-label">5.000 € bis 20.000 €</span>
+          </button>
+          <button class="option card" data-value="20.000 € – 50.000 €">
+            <span class="option-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+            </span>
+            <span class="option-label">20.000 € bis 50.000 €</span>
+          </button>
+          <button class="option card" data-value="mehr als 50.000 €">
+            <span class="option-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h12l4 6-10 12L2 9z"/><path d="M11 3l-1 6 2 3 2-3-1-6"/><path d="M2 9h20"/></svg>
+            </span>
+            <span class="option-label">mehr als 50.000 €</span>
+          </button>
+        </div>
+      </section>
+
+      <!-- ===== SCREEN 8: RATIONAL — Immobilien ===== -->
+      <section class="screen" data-screen="8">
+        <h1>Hast du bereits vermietete Immobilien?</h1>
+        <div class="options" data-question="immobilien">
+          <button class="option" data-value="Nein">
+            <span class="option-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="8" y1="12" x2="16" y2="12"/></svg>
+            </span>
+            <span class="option-label">Nein</span>
+          </button>
+          <button class="option" data-value="1 Immobilie">
+            <span class="option-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"/><path d="M5 21V7l7-4 7 4v14"/><path d="M9 9h.01"/><path d="M9 12h.01"/><path d="M9 15h.01"/><path d="M9 18h.01"/></svg>
+            </span>
+            <span class="option-label">1 Immobilie</span>
+          </button>
+          <button class="option" data-value="mehrere Immobilien">
+            <span class="option-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"/><path d="M3 21V10l6-3v14"/><path d="M15 21V13l6-3v11"/><path d="M6 12h.01"/><path d="M6 15h.01"/><path d="M6 18h.01"/><path d="M18 15h.01"/><path d="M18 18h.01"/></svg>
+            </span>
+            <span class="option-label">mehrere Immobilien</span>
+          </button>
+        </div>
+      </section>
+
+      <!-- ===== SCREEN 9: KONTAKT ===== -->
+      <section class="screen" data-screen="9">
+        <h1>Fast geschafft, wie können wir dich erreichen?</h1>
+        <p class="screen-sub">Danach geht es direkt zum Video. Ein Berater aus Roberts Team meldet sich außerdem persönlich bei dir.</p>
+        <form class="form-grid" id="contactForm" novalidate>
+          <div class="form-group">
+            <label for="firstname">Vorname</label>
+            <input type="text" id="firstname" name="firstname" placeholder="Vorname" autocomplete="given-name" required />
+          </div>
+          <div class="form-group">
+            <label for="lastname">Nachname</label>
+            <input type="text" id="lastname" name="lastname" placeholder="Nachname" autocomplete="family-name" required />
+          </div>
+          <div class="form-group">
+            <label for="phone">Telefonnummer</label>
+            <div class="phone-wrap">
+              <select class="phone-select" id="phoneCountry" name="phoneCountry" aria-label="Ländervorwahl">
+                <option value="+49" selected>🇩🇪 +49</option>
+                <option value="+43">🇦🇹 +43</option>
+                <option value="+41">🇨🇭 +41</option>
+                <option value="+352">🇱🇺 +352</option>
+                <option value="+31">🇳🇱 +31</option>
+                <option value="+32">🇧🇪 +32</option>
+                <option value="+33">🇫🇷 +33</option>
+                <option value="+39">🇮🇹 +39</option>
+                <option value="+34">🇪🇸 +34</option>
+                <option value="+48">🇵🇱 +48</option>
+                <option value="+44">🇬🇧 +44</option>
+                <option value="+45">🇩🇰 +45</option>
+                <option value="+46">🇸🇪 +46</option>
+                <option value="+47">🇳🇴 +47</option>
+                <option value="+420">🇨🇿 +420</option>
+                <option value="+90">🇹🇷 +90</option>
+                <option value="+1">🇺🇸 +1</option>
+              </select>
+              <input type="tel" id="phone" name="phone" placeholder="Handynummer" autocomplete="tel" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="email">E Mail</label>
+            <input type="email" id="email" name="email" placeholder="max.mustermann@web.de" autocomplete="email" required />
+          </div>
+          <button type="submit" class="form-submit" id="submitBtn">Jetzt kostenfreies Video ansehen</button>
+          <div class="form-error" id="formError"></div>
+        </form>
+      </section>
+
+      <!-- ===== SCREEN 10: DANKE ===== -->
+      <section class="screen" data-screen="10">
+        <div class="thanks">
+          <div class="thanks-check">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+          </div>
+          <h1 id="thanksHeadline">Danke!</h1>
+          <p>Ein Berater aus Roberts Team meldet sich <strong style="color:var(--gold)">persönlich in den nächsten 48 Stunden</strong> bei dir für dein Steuerumwandlungsgespräch.</p>
+          <p style="margin-top:24px;margin-bottom:16px;font-size:0.95rem;color:var(--text-light);">Oder wähle direkt jetzt ein freies Zeitfenster im Kalender:</p>
+          <div class="thanks-actions">
+            <a href="" onclick="Calendly.initPopupWidget({url:'https://calendly.com/d/cq7g-6cd-hnm/erstgesprach-zum-vermogensaufbau'});return false;" class="thanks-btn primary">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+              Termin im Kalender wählen
+            </a>
+            <a href="video.html" class="thanks-btn">Zurück zum Video</a>
+            <a href="https://www.instagram.com/robertschwagerus/" target="_blank" rel="noopener" class="thanks-btn">Robert auf Instagram</a>
+          </div>
+        </div>
+      </section>
+
+      <button class="back-step" id="backBtn" style="display:none">← Zurück</button>
+
+    </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Echte Wohnungen: Clips aus ~/Desktop/Arbeit/Gesamt/B-Roll/Wohnungen B-Roll -->
+  <section class="an-flens" aria-label="Echte Wohnungen aus Flensburg">
+    <h2 class="display"><span style="display:block">Echte Wohnungen.</span><span class="tail" style="display:block">Echte Baustellen. Flensburg.</span></h2>
+    <div class="fl-track"><ul class="fl-row"><li><video muted playsinline loop preload="none" poster="assets/img/flensburg/fl1.jpg" data-src="assets/video/flensburg/fl1.mp4"></video></li><li><video muted playsinline loop preload="none" poster="assets/img/flensburg/fl2.jpg" data-src="assets/video/flensburg/fl2.mp4"></video></li><li><video muted playsinline loop preload="none" poster="assets/img/flensburg/fl3.jpg" data-src="assets/video/flensburg/fl3.mp4"></video></li><li><video muted playsinline loop preload="none" poster="assets/img/flensburg/fl4.jpg" data-src="assets/video/flensburg/fl4.mp4"></video></li><li><video muted playsinline loop preload="none" poster="assets/img/flensburg/fl5.jpg" data-src="assets/video/flensburg/fl5.mp4"></video></li><li><video muted playsinline loop preload="none" poster="assets/img/flensburg/fl6.jpg" data-src="assets/video/flensburg/fl6.mp4"></video></li><li><video muted playsinline loop preload="none" poster="assets/img/flensburg/fl7.jpg" data-src="assets/video/flensburg/fl7.mp4"></video></li><li><video muted playsinline loop preload="none" poster="assets/img/flensburg/fl8.jpg" data-src="assets/video/flensburg/fl8.mp4"></video></li><li><video muted playsinline loop preload="none" poster="assets/img/flensburg/fl9.jpg" data-src="assets/video/flensburg/fl9.mp4"></video></li></ul><ul class="fl-row" aria-hidden="true"><li><video muted playsinline loop preload="none" poster="assets/img/flensburg/fl1.jpg" data-src="assets/video/flensburg/fl1.mp4"></video></li><li><video muted playsinline loop preload="none" poster="assets/img/flensburg/fl2.jpg" data-src="assets/video/flensburg/fl2.mp4"></video></li><li><video muted playsinline loop preload="none" poster="assets/img/flensburg/fl3.jpg" data-src="assets/video/flensburg/fl3.mp4"></video></li><li><video muted playsinline loop preload="none" poster="assets/img/flensburg/fl4.jpg" data-src="assets/video/flensburg/fl4.mp4"></video></li><li><video muted playsinline loop preload="none" poster="assets/img/flensburg/fl5.jpg" data-src="assets/video/flensburg/fl5.mp4"></video></li><li><video muted playsinline loop preload="none" poster="assets/img/flensburg/fl6.jpg" data-src="assets/video/flensburg/fl6.mp4"></video></li><li><video muted playsinline loop preload="none" poster="assets/img/flensburg/fl7.jpg" data-src="assets/video/flensburg/fl7.mp4"></video></li><li><video muted playsinline loop preload="none" poster="assets/img/flensburg/fl8.jpg" data-src="assets/video/flensburg/fl8.mp4"></video></li><li><video muted playsinline loop preload="none" poster="assets/img/flensburg/fl9.jpg" data-src="assets/video/flensburg/fl9.mp4"></video></li></ul></div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="row">
+    <div>Schwagerus Capital GmbH · Hafenstraße 142 · 59067 Hamm</div>
+    <div><a href="impressum.html">Impressum</a> &nbsp; <a href="datenschutz.html">Datenschutz</a></div>
+  </div>
+  <p class="by">Seite von <a href="https://krmqntno.github.io" target="_blank" rel="noopener">Kerim Quintino</a></p>
+</footer>
+
+<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+<script>
+    const HUBSPOT_PORTAL_ID = '139527252';
+    const HUBSPOT_FORM_ID = '887bfec9-3666-42d0-bcb5-357a4747e603';
+    const HUBSPOT_ENDPOINT = `https://api.hsforms.com/submissions/v3/integration/submit/${HUBSPOT_PORTAL_ID}/${HUBSPOT_FORM_ID}`;
+
+    const TOTAL_QUESTIONS = 8;
+    let currentScreen = 1;
+    const answers = {};
+    const funnelStart = Date.now();
+
+    function ph(name, props) {
+      if (window.posthog && posthog.capture) posthog.capture(name, props || {});
+    }
+    ph('funnel_start', { referrer: document.referrer || null });
+
+    const screens = document.querySelectorAll('.screen');
+    const progressLabel = document.getElementById('progressLabel');
+    const progressFill = document.getElementById('progressFill');
+    const progressWrap = document.getElementById('progressWrap');
+    const backBtn = document.getElementById('backBtn');
+
+    function showScreen(n) {
+      screens.forEach(s => s.classList.remove('active'));
+      const target = document.querySelector(`.screen[data-screen="${n}"]`);
+      if (target) target.classList.add('active');
+      currentScreen = n;
+      updateProgress();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+      backBtn.style.display = (n > 2 && n < 9) ? 'block' : 'none';
+      progressWrap.style.display = (n === 10) ? 'none' : 'block';
+      if (n === 9) ph('funnel_contact_view', { seconds_since_start: Math.round((Date.now() - funnelStart) / 1000) });
+    }
+
+    function updateProgress() {
+      // Screens 2-9 map to questions 1-8
+      const q = Math.min(Math.max(currentScreen - 1, 1), TOTAL_QUESTIONS);
+      progressLabel.textContent = `${q} / ${TOTAL_QUESTIONS}`;
+      progressFill.style.width = `${(q / TOTAL_QUESTIONS) * 100}%`;
+    }
+
+    // Option cards
+    document.querySelectorAll('.options').forEach(group => {
+      const question = group.dataset.question;
+      group.querySelectorAll('.option').forEach(btn => {
+        btn.addEventListener('click', () => {
+          group.querySelectorAll('.option').forEach(o => o.classList.remove('selected'));
+          btn.classList.add('selected');
+          answers[question] = btn.dataset.value;
+          const step = currentScreen - 1;
+          ph('funnel_step', {
+            step: step,
+            step_of: TOTAL_QUESTIONS,
+            question: question,
+            answer: btn.dataset.value,
+            seconds_since_start: Math.round((Date.now() - funnelStart) / 1000)
+          });
+          setTimeout(() => showScreen(currentScreen + 1), 280);
+        });
+      });
+    });
+
+    // Back button
+    backBtn.addEventListener('click', () => {
+      if (currentScreen > 1) {
+        ph('funnel_back', { from_step: currentScreen - 1 });
+        showScreen(currentScreen - 1);
+      }
+    });
+
+    // Contact form submission
+    const form = document.getElementById('contactForm');
+    const submitBtn = document.getElementById('submitBtn');
+    const formError = document.getElementById('formError');
+
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      formError.classList.remove('show');
+
+      const firstname = document.getElementById('firstname').value.trim();
+      const lastname = document.getElementById('lastname').value.trim();
+      const phoneCountry = document.getElementById('phoneCountry').value;
+      const phoneRaw = document.getElementById('phone').value.trim();
+      const phone = phoneRaw ? `${phoneCountry} ${phoneRaw.replace(/^0+/, '')}` : '';
+      const email = document.getElementById('email').value.trim();
+
+      if (!firstname || !lastname || !phoneRaw || !email) {
+        ph('submit_validation_error', { reason: 'missing_fields', missing: {
+          firstname: !firstname, lastname: !lastname, phone: !phoneRaw, email: !email
+        }});
+        formError.textContent = 'Bitte fülle alle Felder aus.';
+        formError.classList.add('show');
+        return;
+      }
+      if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+        ph('submit_validation_error', { reason: 'invalid_email' });
+        formError.textContent = 'Bitte gib eine gültige E Mail Adresse ein.';
+        formError.classList.add('show');
+        return;
+      }
+
+      submitBtn.disabled = true;
+      submitBtn.textContent = 'Wird gesendet …';
+      ph('submit_attempt', { seconds_since_start: Math.round((Date.now() - funnelStart) / 1000) });
+
+      const summary = [
+        `--- Steuerumwandlungs-Analyse (aus /analyse.html) ---`,
+        `Zu viele Steuern: ${answers.pain_steuern || '-'}`,
+        `Lohnsteuer zurückholen wollen: ${answers.pain_zurueckholen || '-'}`,
+        `Umwandlungs-Wunsch: ${answers.vision_prozent || '-'}`,
+        `Situation: ${answers.situation || '-'}`,
+        `Netto-Einkommen: ${answers.netto || '-'}`,
+        `Angespart: ${answers.angespart || '-'}`,
+        `Vermietete Immobilien: ${answers.immobilien || '-'}`
+      ].join('\n');
+
+      const payload = {
+        fields: [
+          { name: 'firstname', value: firstname },
+          { name: 'lastname', value: lastname },
+          { name: 'email', value: email },
+          { name: 'phone', value: phone },
+          { name: 'eigenkapital', value: answers.angespart || '' },
+          { name: 'nettoeinkommen', value: answers.netto || '' },
+          { name: 'hast_du_schon_erfahrungen_mit_immobilien_als_kapitalanlage', value: answers.immobilien || '' },
+          { name: 'message', value: summary }
+        ],
+        context: {
+          pageUri: window.location.href,
+          pageName: document.title
+        }
+      };
+
+      try {
+        const res = await fetch(HUBSPOT_ENDPOINT, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(payload)
+        });
+
+        if (!res.ok) {
+          const text = await res.text();
+          console.error('HubSpot submission failed:', res.status, text);
+          ph('submit_error', { kind: 'hubspot_http', status: res.status, body: (text || '').slice(0, 300) });
+          throw new Error(`HTTP ${res.status}`);
+        }
+
+        try {
+          localStorage.setItem('makerus_lead', JSON.stringify({
+            firstname, lastname, email, phone,
+            submittedAt: new Date().toISOString()
+          }));
+        } catch (_) {}
+
+        if (window.posthog && posthog.identify) {
+          posthog.identify(email, { email, firstname, lastname, phone });
+        }
+        ph('submit_success', {
+          seconds_since_start: Math.round((Date.now() - funnelStart) / 1000),
+          netto: answers.netto, angespart: answers.angespart, immobilien: answers.immobilien,
+          vision_prozent: answers.vision_prozent, situation: answers.situation,
+          pain_steuern: answers.pain_steuern, pain_zurueckholen: answers.pain_zurueckholen
+        });
+
+        // Neuer Ablauf (03.11.26): nach dem Eintragen direkt zum Video, Vorname für die Begrüßung, UTM mitgeben
+        try { sessionStorage.setItem('rr_lead', JSON.stringify({ vorname: firstname, t: Date.now() })); } catch (_) {}
+        const nextQ = new URLSearchParams();
+        new URLSearchParams(location.search).forEach((val, k) => { if (k.startsWith('utm_') || k === 'ref') nextQ.set(k, val); });
+        location.href = 'video.html' + (nextQ.toString() ? '?' + nextQ.toString() : '');
+      } catch (err) {
+        console.error(err);
+        if (!err.message || !err.message.startsWith('HTTP ')) {
+          ph('submit_error', { kind: 'network', message: String(err && err.message || err).slice(0, 200) });
+        }
+        formError.textContent = 'Es ist ein Fehler aufgetreten. Bitte versuche es erneut oder kontaktiere uns direkt per E Mail.';
+        formError.classList.add('show');
+        submitBtn.disabled = false;
+        submitBtn.textContent = 'Jetzt kostenfreies Video ansehen';
+      }
+    });
+
+    // Calendly-Klick auf Danke-Screen
+    document.querySelectorAll('.thanks-btn').forEach(a => {
+      a.addEventListener('click', () => {
+        const label = a.textContent.trim().slice(0, 60);
+        ph('thanks_click', { label: label, is_calendly: /kalender|termin/i.test(label) });
+      });
+    });
+
+    // Init
+    showScreen(2);
+  </script>
+<script>
+/* Hintergrund zum Vergleichen: ?bg=balkon */
+(function(){var b=new URLSearchParams(location.search).get("bg");if(b==="balkon")document.getElementById("bgImg").src="assets/img/film/balkon_neu.jpg";})();
+/* Flensburg Clips: laden und spielen erst, wenn sichtbar */
+(function(){var vs=[].slice.call(document.querySelectorAll(".fl-row video"));
+if(!("IntersectionObserver" in window)){vs.forEach(function(v){v.src=v.dataset.src;v.play().catch(function(){});});return;}
+var io=new IntersectionObserver(function(es){es.forEach(function(e){var v=e.target;if(e.isIntersecting){if(!v.src)v.src=v.dataset.src;v.play().catch(function(){});}else v.pause();});},{rootMargin:"200px"});
+vs.forEach(function(v){io.observe(v);});})();
+</script>
+</body>
+</html>
