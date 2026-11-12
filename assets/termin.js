@@ -42,7 +42,7 @@
     var f = [bad("tmVorname", d.vorname.length < 2), bad("tmMail", !mailOk.test(d.email)), bad("tmTel", !telRe.test(d.tel) || telDigits(d.tel) < 7),
       bad("tmNetto", !d.netto), bad("tmVertrag", !d.vertrag), bad("tmKapital", !d.kapital)];
     if (f.some(Boolean)) { err.textContent = "Bitte fülle alle Felder aus."; err.classList.add("show"); ph("termin_validation_error"); return; }
-    // Weiche (Kerim 03.11.26): mindestens 2.800 € netto und unbefristet nach der Probezeit, Regeln in config.js
+    // Weiche (Kerim 03.11.26): mindestens 2.400 € netto und unbefristet nach der Probezeit, Regeln in config.js
     var rg = RR.terminRegeln || {};
     d.passt = (rg.nettoNein || []).indexOf(d.netto) < 0 && (rg.vertragJa || []).indexOf(d.vertrag) > -1;
     btn.disabled = true; btn.textContent = "Einen Moment";

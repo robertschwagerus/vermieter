@@ -18,10 +18,10 @@ window.RR = {
   // OFFEN: zweites HubSpot Formular von Simon (eigene Form GUID). Leer heißt Demo, nichts wird gesendet.
   hubspotTermin: { portalId: "139527252", formGuid: "09fb462c-d926-4174-a7ec-470f4a9080d2" }, // Vermieter Termin (Qualifizierung + Buchung), angelegt 03.11.26
   // Kalender der Berater. Platzhalter: der Calendly Link aus start/analyse.html, bis Simon den finalen schickt.
-  // Weiche auf der Terminseite (Kerim 03.11.26): passt nur mit mind. 2.800 € netto UND unbefristet nach der Probezeit.
+  // Weiche auf der Terminseite (Kerim 03.11.26): passt nur mit mind. 2.400 € netto UND unbefristet nach der Probezeit.
   // Sonst Steuerguide statt Kalender. Texte müssen exakt den Optionen in termin.html entsprechen.
   terminRegeln: {
-    nettoNein: ["Unter 2.800 €"],
+    nettoNein: ["Unter 2.400 €"],
     vertragJa: ["Unbefristet, Probezeit vorbei"],
   },
   terminKalender: "https://calendly.com/d/cq7g-6cd-hnm/erstgesprach-zum-vermogensaufbau",
